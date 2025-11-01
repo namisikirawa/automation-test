@@ -1,0 +1,20 @@
+//using dùng chung cho toàn bộ dự án
+global using Microsoft.VisualStudio.TestTools.UnitTesting;
+global using CsvHelper;
+global using FlaUI.Core;
+global using FlaUI.Core.AutomationElements;
+global using FlaUI.Core.Definitions;
+global using FlaUI.Core.Input;
+global using FlaUI.Core.WindowsAPI;
+global using FlaUI.UIA3;
+global using System.Globalization;
+global using System.Text;
+global using System;
+global using System.Linq;
+global using System.Threading;
+global using System.Collections.Generic;
+global using System.IO;
+global using ClinicApp_Test.Form;
+global using ClinicApp_Test.Test;
+global using ClinicApp_Test.Reports;
+global using Allure.Net.Commons;
