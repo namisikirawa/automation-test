@@ -1,66 +1,26 @@
 ﻿
 
+using ClinicApp_Test.Extent;
+using System.Diagnostics;
+
 namespace ClinicApp_Test.Test.PaitientManagament
 {
     [TestClass]
-    public class FindPatient
+    public class Find_Patient : BaseTest_Report
     {
-        private const string appPath = @"D:\SEproject-1&2\ClinicManagement\GUI\bin\Debug\GUI.exe";
-        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_patient.csv";
-
-        private static Application app;
-        private static UIA3Automation automation;
-        private static Window mainWindow;
-        private static LoginForm loginForm;
-        private static MainForm mainForm;
         private static PatientForm patientForm;
+        private const string csvFile =
+            @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_patient.csv";
 
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            app = Application.Launch(appPath);
-            automation = new UIA3Automation();
-            mainWindow = app.GetMainWindow(automation);
-
-            // --- Đăng nhập ---
-            loginForm = new LoginForm(mainWindow);
-            loginForm.EnterUsername("phamquynh");
-            loginForm.EnterPassword("123456");
-            loginForm.ClickLogin();
-            Thread.Sleep(2000);
-            loginForm.CloseMessageBox(automation, app.ProcessId);
-            Thread.Sleep(1000);
-
-            // --- Điều hướng đến quản lý bệnh nhân ---
-            mainForm = new MainForm(mainWindow, automation);
+            // Dùng window & mainForm từ GlobalSetup
+            var mainForm = GlobalSetup.mainForm;
             mainForm.OpenPaitientManagement();
             Thread.Sleep(1000);
 
-            // --- Gán lại cửa sổ chính & form bệnh nhân ---
-            mainWindow = app.GetMainWindow(automation);
-            patientForm = new PatientForm(mainWindow);
-        }
-
-        [DataTestMethod]
-        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
-        public void TestFindEmployee(string name, string phoneNumber, string[] expectedCellData)
-        {
-            // --- Thực hiện tìm kiếm ---
-            patientForm.FindPatient(name, phoneNumber);
-            Thread.Sleep(1500);
-
-            // --- Lấy dữ liệu sau khi tìm ---
-            var allRows = patientForm.GetAllGridValues();
-
-            // --- Kiểm tra có tất cả hàng đều chứa ít nhất 1 trong các dữ liệu mong đợi ---
-            bool allMatch = allRows.All(row =>
-                row.Any(cell =>
-                    expectedCellData.Any(expected =>
-                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-
-            Assert.IsTrue(allMatch,
-                $"Có ít nhất một dòng không chứa bất kỳ dữ liệu mong đợi nào trong số: {string.Join(", ", expectedCellData)}");
-
+            patientForm = new PatientForm(GlobalSetup.mainWindow);
         }
 
         public static IEnumerable<object[]> GetData()
@@ -73,30 +33,59 @@ namespace ClinicApp_Test.Test.PaitientManagament
 
             while (csv.Read())
             {
+                var testCaseName = csv.GetField<string>("testCaseName");
                 var name = csv.GetField<string>("name");
                 var phoneNumber = csv.GetField<string>("phoneNumber");
+
                 var expectedRaw = csv.GetField<string>("expectedCellData") ?? string.Empty;
                 var expectedCellData = expectedRaw.Split('|', StringSplitOptions.RemoveEmptyEntries)
                                                   .Select(s => s.Trim())
                                                   .ToArray();
-                yield return new object[] { name, phoneNumber, expectedCellData };
+
+                yield return new object[] { testCaseName ,name, phoneNumber, expectedCellData };
             }
         }
 
-        [ClassCleanup]
-        public static void Cleanup()
+        [DataTestMethod]
+        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
+        public void TestFindPatient(string testCaseName, string name, string phoneNumber, string[] expectedCellData)
         {
-            if (app != null && !app.HasExited)
+            var _test = _extent.CreateTest(testCaseName);
+            _test.AssignCategory("Tìm kiếm bệnh nhân");
+            try
             {
-                app.Close();
+                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', SĐT = '{phoneNumber}'");
+                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                patientForm.FindPatient(name, phoneNumber);
+                Thread.Sleep(1200);
 
-                var desktop = automation.GetDesktop();
-                var dialog = desktop.FindFirstChild(cf => cf.ByProcessId(app.ProcessId)
-                                                           .And(cf.ByControlType(ControlType.Window)))?.AsWindow();
-                var yesButton = dialog?.FindFirstDescendant(cf => cf.ByText("Yes"))?.AsButton();
-                yesButton?.Click();
+                var allRows = patientForm.GetAllGridValues();
+
+                bool allMatch = allRows.All(row =>
+                    row.Any(cell =>
+                        expectedCellData.Any(expected =>
+                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
+                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.info(_test, "Dữ liệu thực tế:");
+                for (int i = 0; i < allRows.Count; i++)
+                {
+                    var row = allRows[i];
+                    string rowData = string.Join(" | ", row);
+                    ExtentLogger.pass(_test, $"Dòng {i + 1}: {rowData}");
+                }
+
+                Assert.IsTrue(allMatch,$"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm bệnh nhân thành công!");
             }
-            automation?.Dispose();
+            catch (AssertFailedException)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail($"Lỗi trong quá trình test tìm bệnh nhân với tên '{name}' và số điện thoại '{phoneNumber}': {ex.Message}");
+                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm bệnh nhân thất bại!");
+            }
         }
     }
 }

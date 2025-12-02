@@ -1,0 +1,6 @@
+testCaseName,tenCanTim,hoTen,gioiTinh,ngaySinh,Sdt,diaChi,CCCD,email,chieuCao,canNang,diUng,nhomMau,tienSuBenhAn,ghiChu,expectedMessage
+TC_018: Sửa thông tin bệnh nhân thành công,nam,Nguyễn Thành Nam,Nam,24/04/2007,0909521423,56 Trần Bình Trọng,445119050712,quynh@gmail.com,172,65,Không,O+,Không có,Khám sức khỏe định kỳ,Cập nhật thành công!
+TC_019: Sửa thông tin bệnh nhân thất bại khi nhập thiếu các trường bắt buộc,nam,Nguyễn Thành Nam,Nữ,,,,1234567890,maihnhi2005@yahoo.com,160,50,Hải sản,B+,Tiểu đường,Đã điều trị ổn định,Vui lòng điền đầy đủ các trường bắt buộc!
+TC_020: Sửa thông tin bệnh nhân thất bại khi nhập ngày sinh không hợp lệ,nam,Nguyễn Thành Nam,Nam,02/11/2050,0987654321,45 Nguyễn Thị Minh Khai,3216549871,levanhung98@gmail.com,180,75,Bụi nhà,A-,Viêm xoang mãn tính,Cần kiểm tra định kỳ,Ngày sinh không hợp lệ!
+
+

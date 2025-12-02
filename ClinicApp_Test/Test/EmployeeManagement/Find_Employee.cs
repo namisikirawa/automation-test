@@ -1,102 +1,83 @@
 ﻿
 
+using ClinicApp_Test.Extent;
+using System.Diagnostics;
+
 namespace ClinicApp_Test.Test.EmployeeManagement
 {
-    [TestClass]
-    public class FindEmployee
-    {
-        private const string appPath = @"D:\SEproject-1&2\ClinicManagement\GUI\bin\Debug\GUI.exe";
-        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_employee.csv";
 
-        private static Application app;
-        private static UIA3Automation automation;
-        private static Window mainWindow;
-        private static LoginForm loginForm;
-        private static MainForm mainForm;
+    [TestClass]
+    public class Find_Employee : BaseTest_Report
+    {
         private static EmployeeForm employeeForm;
+        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_employee.csv";
 
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            app = Application.Launch(appPath);
-            automation = new UIA3Automation();
-            mainWindow = app.GetMainWindow(automation);
-
-            // --- Đăng nhập ---
-            loginForm = new LoginForm(mainWindow);
-            loginForm.EnterUsername("phamquynh");
-            loginForm.EnterPassword("123456");
-            loginForm.ClickLogin();
-            Thread.Sleep(2000);
-            loginForm.CloseMessageBox(automation, app.ProcessId);
-            Thread.Sleep(1000);
-
-            // --- Điều hướng đến quản lý nhân viên ---
-            mainForm = new MainForm(mainWindow, automation);
+            var mainForm = GlobalSetup.mainForm;
             mainForm.OpenEmployeeManagement();
             Thread.Sleep(1000);
 
-            // --- Gán lại cửa sổ chính & form nhân viên ---
-            mainWindow = app.GetMainWindow(automation);
-            employeeForm = new EmployeeForm(mainWindow);
-        }
-
-        [DataTestMethod]
-        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
-        public void TestFindEmployee(string name, string phoneNumber, string[] expectedCellData)
-        {
-            // --- Thực hiện tìm kiếm ---
-            employeeForm.FindEmployee(name, phoneNumber);
-            Thread.Sleep(1500);
-
-            // --- Lấy dữ liệu sau khi tìm ---
-            var allRows = employeeForm.GetAllGridValues();
-
-            // --- Kiểm tra có tất cả hàng đều chứa ít nhất 1 trong các dữ liệu mong đợi ---
-            bool allMatch = allRows.All(row =>
-                row.Any(cell =>
-                    expectedCellData.Any(expected =>
-                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-
-            Assert.IsTrue(allMatch,
-                $"Có ít nhất một dòng không chứa bất kỳ dữ liệu mong đợi nào trong số: {string.Join(", ", expectedCellData)}");
-
+            employeeForm = new EmployeeForm(GlobalSetup.mainWindow);
         }
 
         public static IEnumerable<object[]> GetData()
         {
             using var reader = new StreamReader(csvFile, Encoding.UTF8);
-            using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+            using var csv = new CsvHelper.CsvReader(reader, System.Globalization.CultureInfo.InvariantCulture);
 
             csv.Read();
             csv.ReadHeader();
 
             while (csv.Read())
             {
+                var testCaseName = csv.GetField<string>("testCaseName");
                 var name = csv.GetField<string>("name");
                 var phoneNumber = csv.GetField<string>("phoneNumber");
                 var expectedRaw = csv.GetField<string>("expectedCellData") ?? string.Empty;
                 var expectedCellData = expectedRaw.Split('|', StringSplitOptions.RemoveEmptyEntries)
                                                   .Select(s => s.Trim())
                                                   .ToArray();
-                yield return new object[] { name, phoneNumber, expectedCellData };
+                yield return new object[] { testCaseName, name, phoneNumber, expectedCellData };
             }
         }
 
-        [ClassCleanup]
-        public static void Cleanup()
+        [DataTestMethod]
+        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
+        public void TestFindEmployee(string testCaseName, string name, string phoneNumber, string[] expectedCellData)
         {
-            if (app != null && !app.HasExited)
+            var _test = _extent.CreateTest(testCaseName);
+            _test.AssignCategory("Tìm kiếm nhân viên");
+            try
             {
-                app.Close();
+                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}'. Số điện thoại: {phoneNumber}");
+                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                employeeForm.FindEmployee(name, phoneNumber);
+                Thread.Sleep(1000);
 
-                var desktop = automation.GetDesktop();
-                var dialog = desktop.FindFirstChild(cf => cf.ByProcessId(app.ProcessId)
-                                                           .And(cf.ByControlType(ControlType.Window)))?.AsWindow();
-                var yesButton = dialog?.FindFirstDescendant(cf => cf.ByText("Yes"))?.AsButton();
-                yesButton?.Click();
+                var allRows = employeeForm.GetAllGridValues();
+                bool allMatch = allRows.All(row =>
+                    row.Any(cell =>
+                        expectedCellData.Any(expected =>
+                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
+                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.info(_test, "Dữ liệu thực tế:");
+                for (int i = 0; i < allRows.Count; i++)
+                {
+                    var row = allRows[i];
+                    string rowData = string.Join(" | ", row);
+                    ExtentLogger.info(_test, $"Dòng {i + 1}: {rowData}");
+                }
+
+                Assert.IsTrue(allMatch, $"Có ít nhất một dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm nhân viên thành công!");
             }
-            automation?.Dispose();
+            catch (Exception ex)
+            {
+                Assert.Fail($"Lỗi trong quá trình tìm kiếm nhân viên: {ex.Message}");
+                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm nhân viên thất bại!");
+            }
         }
     }
 }

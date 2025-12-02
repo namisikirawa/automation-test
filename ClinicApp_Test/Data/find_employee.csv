@@ -1,7 +1,5 @@
-name,phoneNumber,expectedCellData
-khuê,,Bùi Minh Khuê
-,0707389258,Đỗ Tiến Đạt
-nam,0121433955,Đinh Bảo Nam
-Vương,3378,Trần Trọng Vương|Hạnh Nguyên
-
+testCaseName,name,phoneNumber,expectedCellData
+TC_021: Tìm nhân viên theo họ tên,khuê,,Bùi Minh Khuê
+TC_022: Tìm nhân viên theo số điện thoại,,0707389258,Đỗ Tiến Đạt
+TC_023: Tìm nhân viên theo cả họ tên và số điện thoại,Vương,3378,Trần Trọng Vương|Hạnh Nguyên
 

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<extentreports>
+	<configuration>
+
+		<!-- Tên report hiển thị trên giao diện -->
+		<reportName>Clinic App - Login Test Report</reportName>
+
+		<!-- Tên hiển thị trên tab trình duyệt -->
+		<documentTitle>Automation Test Report</documentTitle>
+
+		<!-- Encoding -->
+		<encoding>utf-8</encoding>
+
+		<!-- http hoặc https -->
+		<protocol>HTTP</protocol>
+
+		<!-- Theme: standard hoặc dark -->
+		<theme>standard</theme>
+
+		<!-- Màu sắc chủ đề (tuỳ chọn) -->
+		<timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+
+	</configuration>
+</extentreports>
+

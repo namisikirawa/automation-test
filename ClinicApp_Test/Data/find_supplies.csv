@@ -1,4 +1,4 @@
-suppliesName,provider,expectedCellData
-keo,,Băng keo cá nhân
-,Nhà thuốc Ngọc Châu,Khẩu trang y tế
-cồn,Hiệp Nhơn Pharmacy,Cồn sát khuẩn 70 độ
+testCaseName,suppliesName,provider,expectedCellData
+TC_031: Tìm vật tư theo tên,keo,,Băng keo cá nhân
+TC_032: Tìm vật tư theo nhà cung cấp,Nhà thuốc Ngọc Châu,Khẩu trang y tế
+TC_033: Tìm vật tư theo cả tên vật tư và nhà cung cấp,cồn,Hiệp Nhơn Pharmacy,Cồn sát khuẩn 70 độ

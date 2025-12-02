@@ -1,6 +1,6 @@
-tenVatTu,SL,DVT,donGia,ngayNhap,ngayHetHan,nhaCungCap
-Găng tay y tế,100,Hộp,50000,2025-06-10,2026-06-10,Công ty A
-Khẩu trang N95,200,Hộp,150000,2025-06-11,2026-06-11,Công ty B
-Dung dịch sát khuẩn,50,Chai,80000,2025-06-12,2025-12-12,Công ty C
+testCaseName,tenVatTu,SL,DVT,donGia,ngayNhap,ngayHetHan,nhaCungCap,expectedMessage
+TC_009: Thêm vật tư thành công,Găng tay y tế,100,Hộp,50000,10/06/2025,10/06/2026,Công ty A,Thêm vật tư thành công!
+TC_010: Thêm vật tư thất bại khi ngày nhập hàng không hợp lệ,Khẩu trang N95,200,Hộp,150000,11/06/2050,12/08/2060,Công ty B,Ngày nhập hàng không hợp lệ!
+TC_011: Thêm vật tư thất bại khi nhập thiếu thông tin,,50,Chai,80000,12/06/2025,,Công ty C,Vui lòng điền đầy đủ thông tin!
 
 

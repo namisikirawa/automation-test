@@ -1,7 +1,7 @@
-hoTen,gioiTinh,ngaySinh,Sdt,diaChi,CCCD,email,chieuCao,canNang,diUng,nhomMau,tienSuBenhAn,ghiChu
-Nguyễn Thành Nam,Nam,24/4/2007,0909372148,56 Trần Bình Trọng,4451190507,nguyenthanhnam@gmail.com,172,65,Không,O+,Không có,Khám sức khỏe định kỳ
-Trần Thị Mai Nhi,Nữ,15/8/2005,0912345678,123 Lý Thường Kiệt,1234567890,maihnhi2005@yahoo.com,160,50,Hải sản,B+,Tiểu đường,Đã điều trị ổn định
-Lê Văn Hùng,Nam,2/1/1998,0987654321,45 Nguyễn Thị Minh Khai,3216549871,levanhung98@gmail.com,180,75,Bụi nhà,A-,Viêm xoang mãn tính,Cần kiểm tra định kỳ
-Phạm Ngọc Bích,Nữ,30/12/2000,0909123456,78 Hai Bà Trưng,7894561230,pnbich2000@gmail.com,158,48,Không,O-,Đã từng phẫu thuật ruột thừa,Báo bác sĩ nếu cần chụp CT
-Đỗ Minh Quân,Nam,5/5/1995,0938123456,34 Lê Lợi,5647382910,dmquan95@gmail.com,170,68,Thuốc kháng sinh,B-,Hen suyễn nhẹ,Tránh khói bụi khi vận động
+testCaseName,hoTen,gioiTinh,ngaySinh,Sdt,diaChi,CCCD,email,chieuCao,canNang,diUng,nhomMau,tienSuBenhAn,ghiChu,expectedMessage
+TC_004: Thêm bệnh nhân thành công,Nguyễn Thành Nam,Nam,24/04/2007,0909372148,56 Trần Bình Trọng,445119050712,nguyenthanhnam@gmail.com,172,65,Không,O+,Không có,Khám sức khỏe định kỳ,Thêm bệnh nhân thành công!
+TC_005: Thêm bệnh nhân thất bại khi nhập thiếu thông tin,Trần Thị Mai Nhi,,14/08/2007,0912345678,,123456789012,maihnhi2005@yahoo.com,160,50,Hải sản,B+,Tiểu đường,Đã điều trị ổn định,Vui lòng điền đầy đủ các trường bắt buộc!
+TC_006: Thêm bệnh nhân thất bại với ngày sinh không hợp lệ,Lê Văn Hùng,Nam,02/11/2050,0987654321,45 Nguyễn Thị Minh Khai,321654987152,levanhung98@gmail.com,180,75,Bụi nhà,A-,Viêm xoang mãn tính,Cần kiểm tra định kỳ,Ngày sinh không hợp lệ!
+TC_007: Thêm bệnh nhân thất bại khi nhập email không đúng định dạng,Phạm Ngọc Bích,Nữ,30/12/2000,0909123456,78 Hai Bà Trưng,789456123074,pnbich,158,48,Không,O-,Đã từng phẫu thuật ruột thừa,Báo bác sĩ nếu cần chụp CT,Email không đúng định dạng!
+TC_008: Thêm bệnh nhân thất bại khi nhập sai CMND/CCCD,Đỗ Minh Quân,Nam,05/05/1995,0938123456,34 Lê Lợi,56473,dmquan95@gmail.com,170,68,Thuốc kháng sinh,B-,Hen suyễn nhẹ,Tránh khói bụi khi vận động,CCCD phải gồm đúng 12 số!
 

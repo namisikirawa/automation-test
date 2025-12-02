@@ -1,47 +1,26 @@
-﻿using ClinicApp_Test.Form;
+﻿using ClinicApp_Test.Extent;
+using ClinicApp_Test.Form;
+using System.Diagnostics;
 
 
 namespace ClinicApp_Test.Test.Login
 {
     [TestClass]
-    public class Change_Password
+    public class Change_Password : BaseTest_Report
     {
-        private const string appPath = @"D:\SEproject-1&2\ClinicManagement\GUI\bin\Debug\GUI.exe";
-        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\change_password.csv";
-
-        private static Application app;
-        private static UIA3Automation automation;
-        private static Window mainWindow;
-        private static LoginForm loginForm;
         private static ChangePasswordForm changePasswordForm;
+        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\change_password.csv";
 
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            app = Application.Launch(appPath);
-            automation = new UIA3Automation();
-            mainWindow = app.GetMainWindow(automation);
-
-            // Đăng nhập
-            loginForm = new LoginForm(mainWindow);
-            loginForm.EnterUsername("phamquynh");
-            loginForm.EnterPassword("123456");
-            loginForm.ClickLogin();
-            Thread.Sleep(2000);
-            loginForm.CloseMessageBox(automation, app.ProcessId);
-            Thread.Sleep(2000);
-
-            // Mở màn hình đổi mật khẩu
-            mainWindow = app.GetMainWindow(automation);
-            var mainForm = new MainForm(mainWindow, automation);
+            var mainForm = GlobalSetup.mainForm;
             mainForm.OpenChangePasswordForm();
+            Thread.Sleep(1000);
 
-            changePasswordForm = new ChangePasswordForm(mainWindow, automation);
+            changePasswordForm = new ChangePasswordForm(GlobalSetup.mainWindow,GlobalSetup.automation);
         }
-
-        
-
-        public static IEnumerable<object[]> GetData()
+        public static IEnumerable<object[]> GetChangePasswordData()
         {
             using var reader = new StreamReader(csvFile, Encoding.UTF8);
             using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
@@ -52,41 +31,41 @@ namespace ClinicApp_Test.Test.Login
             {
                 yield return new object[]
                 {
+                    csv.GetField<string>("testCaseName"),
                     csv.GetField<string>("oldpass"),
                     csv.GetField<string>("newpass"),
                     csv.GetField<string>("expectedMessage")
                 };
             }
         }
-
         [DataTestMethod]
-        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
-        public void TestChangePassword(string oldPass, string newPass, string expectedMsg)
+        [DynamicData(nameof(GetChangePasswordData), DynamicDataSourceType.Method)]
+        public void TestChangePassword(string testCaseName,string oldPass, string newPass, string expectedMsg)
         {
-            changePasswordForm.EnterOldPassword(oldPass);
-            changePasswordForm.EnterNewPassword(newPass);
-            changePasswordForm.ClickChangePassword();
-
-            var actualMsg = changePasswordForm.GetMessageBoxTextAndClose(app.ProcessId);
-            Console.WriteLine("MessageBox: " + actualMsg);
-
-            Assert.AreEqual(expectedMsg, actualMsg, "Thông báo không khớp!");
-        }
-
-        [ClassCleanup]
-        public static void Cleanup()
-        {
-            if (app != null && !app.HasExited)
+            var _test = _extent.CreateTest(testCaseName);
+            _test.AssignCategory("Đổi mật khẩu");
+            try
             {
-                app.Close();
+                ExtentLogger.info(_test, $"Nhập mật khẩu cũ: {oldPass}");
+                ExtentLogger.info(_test, $"Nhập mật khẩu mới: {newPass}");
+                changePasswordForm.EnterOldPassword(oldPass);
+                changePasswordForm.EnterNewPassword(newPass);
 
-                var desktop = automation.GetDesktop();
-                var dialog = desktop.FindFirstChild(cf => cf.ByProcessId(app.ProcessId)
-                                                           .And(cf.ByControlType(ControlType.Window)))
-                                    ?.AsWindow();
-                dialog?.FindFirstDescendant(cf => cf.ByText("Yes"))?.AsButton()?.Click();
+                ExtentLogger.info(_test, "Nhấn nút Đổi mật khẩu");
+                changePasswordForm.ClickChangePassword();
+
+                var actualMsg = changePasswordForm.GetMessageBoxTextAndClose(GlobalSetup.app.ProcessId);
+                ExtentLogger.info(_test, $"Thông báo mong đợi: '{expectedMsg}'");
+                ExtentLogger.info(_test, $"Thực tế: '{actualMsg}'");
+
+                Assert.AreEqual(expectedMsg, actualMsg, "Thông báo không khớp!");
+                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
             }
-            automation?.Dispose();
+            catch (Exception ex)
+            {
+                Assert.Fail("Lỗi trong quá trình test đổi mật khẩu: " + ex.Message);
+                ExtentLogger.failHighlight(_test, "Test case fail: Thông báo không khớp");
+            }
         }
     }
 }

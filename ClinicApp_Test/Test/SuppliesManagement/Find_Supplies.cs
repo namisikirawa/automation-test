@@ -1,65 +1,25 @@
 ﻿
+using ClinicApp_Test.Extent;
+using System.Diagnostics;
+
 namespace ClinicApp_Test.Test.SuppliesManagement
 {
     [TestClass]
-    public class FindEmployee
+    public class Find_Supplies : BaseTest_Report
     {
-        private const string appPath = @"D:\SEproject-1&2\ClinicManagement\GUI\bin\Debug\GUI.exe";
-        private const string csvFile = @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_supplies.csv";
-
-        private static Application app;
-        private static UIA3Automation automation;
-        private static Window mainWindow;
-        private static LoginForm loginForm;
-        private static MainForm mainForm;
         private static SuppliesForm suppliesForm;
+        private const string csvFile =
+            @"D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\Data\find_supplies.csv";
 
         [ClassInitialize]
         public static void Setup(TestContext context)
         {
-            app = Application.Launch(appPath);
-            automation = new UIA3Automation();
-            mainWindow = app.GetMainWindow(automation);
-
-            // --- Đăng nhập ---
-            loginForm = new LoginForm(mainWindow);
-            loginForm.EnterUsername("phamquynh");
-            loginForm.EnterPassword("123456");
-            loginForm.ClickLogin();
-            Thread.Sleep(2000);
-            loginForm.CloseMessageBox(automation, app.ProcessId);
+            // Dùng mainForm từ GlobalSetup
+            var mainForm = GlobalSetup.mainForm;
+            mainForm.OpenSuppliesManagement();
             Thread.Sleep(1000);
 
-            // --- Điều hướng đến quản lý vật tư ---
-            mainForm = new MainForm(mainWindow, automation);
-            mainForm.OpenSuppliestManagement();
-            Thread.Sleep(1000);
-
-            // --- Gán lại cửa sổ chính & form nhân viên ---
-            mainWindow = app.GetMainWindow(automation);
-            suppliesForm = new SuppliesForm(mainWindow);
-        }
-
-        [DataTestMethod]
-        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
-        public void TestFindSupplies(string name, string provider, string[] expectedCellData)
-        {
-            // --- Thực hiện tìm kiếm ---
-            suppliesForm.FindSupplies(name, provider);
-            Thread.Sleep(1500);
-
-            // --- Lấy dữ liệu sau khi tìm ---
-            var allRows = suppliesForm.GetAllGridValues();
-
-            // --- Kiểm tra có tất cả hàng đều chứa ít nhất 1 trong các dữ liệu mong đợi ---
-            bool allMatch = allRows.All(row =>
-                row.Any(cell =>
-                    expectedCellData.Any(expected =>
-                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-
-            Assert.IsTrue(allMatch,
-                $"Có ít nhất một dòng không chứa bất kỳ dữ liệu mong đợi nào trong số: {string.Join(", ", expectedCellData)}");
-
+            suppliesForm = new SuppliesForm(GlobalSetup.mainWindow);
         }
 
         public static IEnumerable<object[]> GetData()
@@ -72,30 +32,55 @@ namespace ClinicApp_Test.Test.SuppliesManagement
 
             while (csv.Read())
             {
+                var testCaseName = csv.GetField<string>("testCaseName");
                 var suppliesName = csv.GetField<string>("suppliesName");
                 var provider = csv.GetField<string>("provider");
+
                 var expectedRaw = csv.GetField<string>("expectedCellData") ?? string.Empty;
                 var expectedCellData = expectedRaw.Split('|', StringSplitOptions.RemoveEmptyEntries)
                                                   .Select(s => s.Trim())
                                                   .ToArray();
-                yield return new object[] { suppliesName, provider, expectedCellData };
+
+                yield return new object[] { testCaseName, suppliesName, provider, expectedCellData };
             }
         }
 
-        [ClassCleanup]
-        public static void Cleanup()
+        [DataTestMethod]
+        [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
+        public void TestFindSupplies(string testCaseName, string name, string provider, string[] expectedCellData)
         {
-            if (app != null && !app.HasExited)
+            var _test = _extent.CreateTest(testCaseName);
+            _test.AssignCategory("Tìm kiếm vật tư");
+            try
             {
-                app.Close();
+                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', Nhà cung cấp = '{provider}'");
+                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                suppliesForm.FindSupplies(name, provider);
+                Thread.Sleep(1200);
 
-                var desktop = automation.GetDesktop();
-                var dialog = desktop.FindFirstChild(cf => cf.ByProcessId(app.ProcessId)
-                                                           .And(cf.ByControlType(ControlType.Window)))?.AsWindow();
-                var yesButton = dialog?.FindFirstDescendant(cf => cf.ByText("Yes"))?.AsButton();
-                yesButton?.Click();
+                var allRows = suppliesForm.GetAllGridValues();
+
+                bool allMatch = allRows.All(row =>
+                    row.Any(cell =>
+                        expectedCellData.Any(expected =>
+                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
+                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.info(_test, "Dữ liệu thực tế:");
+                for (int i = 0; i < allRows.Count; i++)
+                {
+                    var row = allRows[i];
+                    string rowData = string.Join(" | ", row);
+                    ExtentLogger.pass(_test, $"Dòng {i + 1}: {rowData}");
+                }
+
+                Assert.IsTrue(allMatch, $"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm vật tư thành công!");
             }
-            automation?.Dispose();
+            catch (Exception ex)
+            {
+                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm vật tư thất bại!");
+                Assert.Fail($"TestFindSupplies failed with exception: {ex.Message}");
+            }
         }
     }
 }

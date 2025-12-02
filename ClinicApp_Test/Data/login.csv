@@ -1,12 +1,5 @@
-﻿username,password,expectedMessage
-trongquynh,16082003,Tài khoản hoặc mật khẩu không chính xác!
-aaa,456,Tài khoản hoặc mật khẩu không chính xác!
-trongquynh,22555,Tài khoản hoặc mật khẩu không chính xác!
-haha,1608,Tài khoản hoặc mật khẩu không chính xác!
-bedep,1234,Tài khoản hoặc mật khẩu không chính xác!
-,password,Tài khoản không được để trống
-,pass,Tài khoản không được để trống
-user,,Mật khẩu không được để trống
-username,,Mật khẩu không được để trống
-aaa,123,Chúc mừng bạn đã đăng nhập thành công!
-phamquynh,123456,Chúc mừng bạn đã đăng nhập thành công!
+﻿testCaseName,username,password,expectedMessage
+TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng,trongquynh,16082003,Tài khoản hoặc mật khẩu không chính xác!
+TC_002: Đăng nhập thất bại với tài khoản để trống,,password,Tài khoản không được để trống
+TC_003: Đăng nhập thất bại với mật khẩu để trống,user,,Mật khẩu không được để trống
+TC_004: Đăng nhập thành công,admin,123456,Chúc mừng bạn đã đăng nhập thành công!

@@ -1,0 +1,4 @@
+testCaseName,tenCanTim,hoTen,gioiTinh,ngaySinh,Sdt,diaChi,email,chucVu,gioLamViec,bangCap,knLamViec,expectedMessage
+TC_015: Thêm nhân viên thành công,c,Lê Hữu C,Nam,21/03/1990,0901123456,15 Lê Lợi,nvana@gmail.com,Trưởng khoa,Ca sáng + tối,Đại học Y Hà Nội,10 năm tại BV Bạch Mai + 5 năm tại bệnh viện Vinmec,Cập nhật thành công!
+TC_016: Thêm nhân viên thất bại khi nhập thiếu các trường bắt buộc,c,Lê Hữu C,Nữ,,0912345678,,tranb92@yahoo.com,Y tá,Ca chiều,Cao đẳng Y tế,5 năm kinh nghiệm,Vui lòng điền đầy đủ các trường bắt buộc!
+TC_017: Thêm nhân viên thất bại khi nhập ngày sinh không hợp lệ,c,Lê Hữu C,Nam,03/11/2060,0987654521,78 Hai Bà Trưng,lehc@gmail.com,Lễ tân,Ca hành chính,Đại học KHXHNV,3 năm tại Vinmec,Ngày sinh không hợp lệ!

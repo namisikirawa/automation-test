@@ -1,0 +1,3947 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Clinic Management App Automation Test Report</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  dark">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">Clinic Management App Test Report</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">12/1/2025 6:57:39 PM</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+    <li class="nav-item dropdown" onclick="toggleView('category-view')">
+     <a id="nav-category" class="dropdown-toggle" href="#">
+      <span class="ico"><i class="fa fa-tag"></i></span>
+     </a>
+    </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>  <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+          <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" href="#">Tìm kiếm bệnh nhân</a>  <a class="dropdown-item" href="#">Sửa vật tư</a>  <a class="dropdown-item" href="#">Thêm bệnh nhân</a>  <a class="dropdown-item" href="#">Tìm kiếm vật tư</a>  <a class="dropdown-item" href="#">Xóa vật tư</a>  <a class="dropdown-item" href="#">Đăng nhập</a>  <a class="dropdown-item" href="#">Xóa bệnh nhân</a>  <a class="dropdown-item" href="#">Thêm vật tư</a>  <a class="dropdown-item" href="#">Sửa nhân viên</a>  <a class="dropdown-item" href="#">Sửa bệnh nhân</a>  <a class="dropdown-item" href="#">Tìm kiếm nhân viên</a>  <a class="dropdown-item" href="#">Đổi mật khẩu</a>  <a class="dropdown-item" href="#">Thêm nhân viên</a>           </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag="Thêm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_001: Thêm nhân viên thành công</p>
+            <p class="text-sm">
+              <span>6:57:41 PM</span> / <span>7520.96 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_001: Thêm nhân viên thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:57:41 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:57:49 PM</span>
+                  <span class='badge badge-default'>7520.96 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:41</td>
+        <td>
+Nhấn nút Thêm nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:41</td>
+        <td>
+Nhập thông tin nhân viên: Họ tên: Nguyễn Văn Tuấn, Giới tính: Nam, Ngày sinh: 21/03/1990, SĐT: 0901123456, Địa chỉ: 12 Lê Lợi, Email: nvana@gmail.com, Chức vụ: Bác sĩ, Giờ làm việc: Ca sáng, Bằng cấp: Đại học Y Hà Nội, Kinh nghiệm: 10 năm tại BV Bạch Mai        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:45</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:47</td>
+        <td>
+Thông báo mong đợi: 'Thêm nhân viên thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:47</td>
+        <td>
+Thực tế: 'Thêm nhân viên thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:47</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:49</td>
+        <td>
+Đã đóng form thêm nhân viên        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag="Thêm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_002: Thêm nhân viên thất bại với họ tên không hợp lệ</p>
+            <p class="text-sm">
+              <span>6:57:53 PM</span> / <span>6919.16 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_002: Thêm nhân viên thất bại với họ tên không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 6:57:53 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:58:00 PM</span>
+                  <span class='badge badge-default'>6919.16 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:53</td>
+        <td>
+Nhấn nút Thêm nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:53</td>
+        <td>
+Nhập thông tin nhân viên: Họ tên: Trần Thị #$, Giới tính: Nữ, Ngày sinh: 10/08/1992, SĐT: 0912345678, Địa chỉ: 45 Nguyễn Trãi, Email: tranb92@yahoo.com, Chức vụ: Y tá, Giờ làm việc: Ca chiều, Bằng cấp: Cao đẳng Y tế, Kinh nghiệm: 5 năm kinh nghiệm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:57:57</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:59</td>
+        <td>
+Thông báo mong đợi: 'Họ tên không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:59</td>
+        <td>
+Thực tế: 'Họ tên không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:57:59</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:00</td>
+        <td>
+Đã đóng form thêm nhân viên        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag="Thêm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_003: Thêm nhân viên thành công</p>
+            <p class="text-sm">
+              <span>6:58:00 PM</span> / <span>8175.48 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_003: Thêm nhân viên thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:58:00 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:58:08 PM</span>
+                  <span class='badge badge-default'>8175.48 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:00</td>
+        <td>
+Nhấn nút Thêm nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:00</td>
+        <td>
+Nhập thông tin nhân viên: Họ tên: Lê Hữu C, Giới tính: Nam, Ngày sinh: 03/11/1985, SĐT: 0987654321, Địa chỉ: 78 Hai Bà Trưng, Email: lehc@gmail.com, Chức vụ: Lễ tân, Giờ làm việc: Ca hành chính, Bằng cấp: Đại học KHXHNV, Kinh nghiệm: 3 năm tại Vinmec        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:04</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:06</td>
+        <td>
+Thông báo mong đợi: 'Thêm nhân viên thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:06</td>
+        <td>
+Thực tế: 'Thêm nhân viên thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:06</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:08</td>
+        <td>
+Đã đóng form thêm nhân viên        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="4"
+          author=""
+          tag="Thêm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_001: Xóa nhân viên thành công</p>
+            <p class="text-sm">
+              <span>6:58:10 PM</span> / <span>3218.84 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">TC_001: Xóa nhân viên thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:58:10 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:58:13 PM</span>
+                  <span class='badge badge-default'>3218.84 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:10</td>
+        <td>
+Số dòng trước khi xóa: 9        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:10</td>
+        <td>
+Xóa nhân viên đầu tiên trong danh sách        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:13</td>
+        <td>
+Số dòng sau khi xóa: 3        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>18:58:13</td>
+        <td>
+<span class='badge white-text red'>Test case fail: Xóa nhân viên thất bại</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag="Sửa nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_015: Thêm nhân viên thành công</p>
+            <p class="text-sm">
+              <span>6:58:15 PM</span> / <span>15547.59 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_015: Thêm nhân viên thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:58:15 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:58:31 PM</span>
+                  <span class='badge badge-default'>15547.59 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:15</td>
+        <td>
+Tìm nhân viên cần sửa: c        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:18</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:20</td>
+        <td>
+Mở form sửa nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:20</td>
+        <td>
+Nhập thông tin mới: Họ tên: Lê Hữu C, Giới tính: Nam, Ngày sinh: 21/03/1990, SĐT: 0901123456, Địa chỉ: 15 Lê Lợi, Email: nvana@gmail.com, Chức vụ: Trưởng khoa, Giờ làm việc: Ca sáng + tối, Bằng cấp: Đại học Y Hà Nội, Kinh nghiệm: 10 năm tại BV Bạch Mai + 5 năm tại bệnh viện Vinmec        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:27</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:31</td>
+        <td>
+Thông báo mong đợi: 'Cập nhật thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:31</td>
+        <td>
+Thực tế: 'Cập nhật thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:31</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="6"
+          author=""
+          tag="Sửa nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_016: Thêm nhân viên thất bại khi nhập thiếu các trường bắt buộc</p>
+            <p class="text-sm">
+              <span>6:58:31 PM</span> / <span>15257.76 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_016: Thêm nhân viên thất bại khi nhập thiếu các trường bắt buộc</h5>
+                  <span class='badge badge-success'>12/1/2025 6:58:31 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:58:46 PM</span>
+                  <span class='badge badge-default'>15257.76 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:31</td>
+        <td>
+Tìm nhân viên cần sửa: c        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:33</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:35</td>
+        <td>
+Mở form sửa nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:35</td>
+        <td>
+Nhập thông tin mới: Họ tên: Lê Hữu C, Giới tính: Nữ, Ngày sinh: , SĐT: 0912345678, Địa chỉ: , Email: tranb92@yahoo.com, Chức vụ: Y tá, Giờ làm việc: Ca chiều, Bằng cấp: Cao đẳng Y tế, Kinh nghiệm: 5 năm kinh nghiệm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:41</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:46</td>
+        <td>
+Thông báo mong đợi: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:46</td>
+        <td>
+Thực tế: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:58:46</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="7"
+          author=""
+          tag="Sửa nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_017: Thêm nhân viên thất bại khi nhập ngày sinh không hợp lệ</p>
+            <p class="text-sm">
+              <span>6:58:46 PM</span> / <span>17186.68 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_017: Thêm nhân viên thất bại khi nhập ngày sinh không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 6:58:46 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:03 PM</span>
+                  <span class='badge badge-default'>17186.68 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:46</td>
+        <td>
+Tìm nhân viên cần sửa: c        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:48</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:51</td>
+        <td>
+Mở form sửa nhân viên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:51</td>
+        <td>
+Nhập thông tin mới: Họ tên: Lê Hữu C, Giới tính: Nam, Ngày sinh: 03/11/2060, SĐT: 0987654521, Địa chỉ: 78 Hai Bà Trưng, Email: lehc@gmail.com, Chức vụ: Lễ tân, Giờ làm việc: Ca hành chính, Bằng cấp: Đại học KHXHNV, Kinh nghiệm: 3 năm tại Vinmec        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:58:58</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:03</td>
+        <td>
+Thông báo mong đợi: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:03</td>
+        <td>
+Thực tế: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:03</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="8"
+          author=""
+          tag="Tìm kiếm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_021: Tìm nhân viên theo họ tên</p>
+            <p class="text-sm">
+              <span>6:59:05 PM</span> / <span>3472.64 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_021: Tìm nhân viên theo họ tên</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:05 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:09 PM</span>
+                  <span class='badge badge-default'>3472.64 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:05</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = 'khuê'. Số điện thoại:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:05</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:09</td>
+        <td>
+Dữ liệu mong đợi: Bùi Minh Khuê        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:09</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:09</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm nhân viên thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="9"
+          author=""
+          tag="Tìm kiếm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_022: Tìm nhân viên theo số điện thoại</p>
+            <p class="text-sm">
+              <span>6:59:09 PM</span> / <span>3467.32 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_022: Tìm nhân viên theo số điện thoại</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:09 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:12 PM</span>
+                  <span class='badge badge-default'>3467.32 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:09</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = ''. Số điện thoại: 0707389258        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:09</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:12</td>
+        <td>
+Dữ liệu mong đợi: Đỗ Tiến Đạt        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:12</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:12</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm nhân viên thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="10"
+          author=""
+          tag="Tìm kiếm nhân viên "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_023: Tìm nhân viên theo cả họ tên và số điện thoại</p>
+            <p class="text-sm">
+              <span>6:59:12 PM</span> / <span>3737.66 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_023: Tìm nhân viên theo cả họ tên và số điện thoại</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:12 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:16 PM</span>
+                  <span class='badge badge-default'>3737.66 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm nhân viên</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:12</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = 'Vương'. Số điện thoại: 3378        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:12</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:16</td>
+        <td>
+Dữ liệu mong đợi: Trần Trọng Vương, Hạnh Nguyên        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:16</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:16</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm nhân viên thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="11"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_011: Đổi mật khẩu thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>6:59:18 PM</span> / <span>1528.44 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_011: Đổi mật khẩu thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:18 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:20 PM</span>
+                  <span class='badge badge-default'>1528.44 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:18</td>
+        <td>
+Nhập mật khẩu cũ:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:18</td>
+        <td>
+Nhập mật khẩu mới: newpass        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:18</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:20</td>
+        <td>
+Thông báo mong đợi: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:20</td>
+        <td>
+Thực tế: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:20</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="12"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_012: Đổi mật khẩu thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>6:59:20 PM</span> / <span>1522.5 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_012: Đổi mật khẩu thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:20 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:21 PM</span>
+                  <span class='badge badge-default'>1522.5 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:20</td>
+        <td>
+Nhập mật khẩu cũ: oldpass        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:20</td>
+        <td>
+Nhập mật khẩu mới:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:20</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:21</td>
+        <td>
+Thông báo mong đợi: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:21</td>
+        <td>
+Thực tế: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:21</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="13"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_013: Đổi mật khẩu thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>6:59:21 PM</span> / <span>1508.47 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_013: Đổi mật khẩu thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:21 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:23 PM</span>
+                  <span class='badge badge-default'>1508.47 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:21</td>
+        <td>
+Nhập mật khẩu cũ:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:21</td>
+        <td>
+Nhập mật khẩu mới:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:21</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:23</td>
+        <td>
+Thông báo mong đợi: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:23</td>
+        <td>
+Thực tế: 'Vui lòng nhập đầy đủ thông tin'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:23</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="14"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_014: Đổi mật khẩu thất bại khi nhập trùng mật khẩu mới và cũ</p>
+            <p class="text-sm">
+              <span>6:59:23 PM</span> / <span>1531.34 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_014: Đổi mật khẩu thất bại khi nhập trùng mật khẩu mới và cũ</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:23 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:24 PM</span>
+                  <span class='badge badge-default'>1531.34 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:23</td>
+        <td>
+Nhập mật khẩu cũ: password        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:23</td>
+        <td>
+Nhập mật khẩu mới: password        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:23</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:24</td>
+        <td>
+Thông báo mong đợi: 'Mật khẩu mới và cũ không được giống nhau'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:24</td>
+        <td>
+Thực tế: 'Mật khẩu mới và cũ không được giống nhau'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:24</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="15"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_015: Đổi mật khẩu thất bại khi nhập mật khẩu cũ không đúng</p>
+            <p class="text-sm">
+              <span>6:59:24 PM</span> / <span>1506.75 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_015: Đổi mật khẩu thất bại khi nhập mật khẩu cũ không đúng</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:24 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:26 PM</span>
+                  <span class='badge badge-default'>1506.75 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:24</td>
+        <td>
+Nhập mật khẩu cũ: 1608        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:24</td>
+        <td>
+Nhập mật khẩu mới: 123456        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:24</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:26</td>
+        <td>
+Thông báo mong đợi: 'Mật khẩu cũ không đúng!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:26</td>
+        <td>
+Thực tế: 'Mật khẩu cũ không đúng!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:26</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="16"
+          author=""
+          tag="Đổi mật khẩu "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_016: Đổi mật khẩu thành công</p>
+            <p class="text-sm">
+              <span>6:59:26 PM</span> / <span>1571.44 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_016: Đổi mật khẩu thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:26 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:27 PM</span>
+                  <span class='badge badge-default'>1571.44 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đổi mật khẩu</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:26</td>
+        <td>
+Nhập mật khẩu cũ: 160823        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:26</td>
+        <td>
+Nhập mật khẩu mới: 123456        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:26</td>
+        <td>
+Nhấn nút Đổi mật khẩu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:27</td>
+        <td>
+Thông báo mong đợi: 'Đổi mật khẩu thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:27</td>
+        <td>
+Thực tế: 'Mật khẩu cũ không đúng!'        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="17"
+          author=""
+          tag="Đăng nhập "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng</p>
+            <p class="text-sm">
+              <span>6:59:30 PM</span> / <span>1806.2 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:30 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:31 PM</span>
+                  <span class='badge badge-default'>1806.2 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đăng nhập</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:30</td>
+        <td>
+Nhập Username: trongquynh, Password: 16082003        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:30</td>
+        <td>
+Nhấn nút Đăng nhập        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:31</td>
+        <td>
+Thông báo mong đợi: Tài khoản hoặc mật khẩu không chính xác!        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:31</td>
+        <td>
+Thực tế: Tài khoản hoặc mật khẩu không chính xác!        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:31</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Kết quả khớp với mong đợi</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="18"
+          author=""
+          tag="Đăng nhập "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_002: Đăng nhập thất bại với tài khoản để trống</p>
+            <p class="text-sm">
+              <span>6:59:32 PM</span> / <span>2042.79 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_002: Đăng nhập thất bại với tài khoản để trống</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:32 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:34 PM</span>
+                  <span class='badge badge-default'>2042.79 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đăng nhập</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:32</td>
+        <td>
+Nhập Username: , Password: password        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:32</td>
+        <td>
+Nhấn nút Đăng nhập        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:34</td>
+        <td>
+Thông báo mong đợi: Tài khoản không được để trống        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:34</td>
+        <td>
+Thực tế: Tài khoản không được để trống        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:34</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Kết quả khớp với mong đợi</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="19"
+          author=""
+          tag="Đăng nhập "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_003: Đăng nhập thất bại với mật khẩu để trống</p>
+            <p class="text-sm">
+              <span>6:59:35 PM</span> / <span>1974.6 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_003: Đăng nhập thất bại với mật khẩu để trống</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:35 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:37 PM</span>
+                  <span class='badge badge-default'>1974.6 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đăng nhập</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:35</td>
+        <td>
+Nhập Username: user, Password:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:35</td>
+        <td>
+Nhấn nút Đăng nhập        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:37</td>
+        <td>
+Thông báo mong đợi: Mật khẩu không được để trống        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:37</td>
+        <td>
+Thực tế: Mật khẩu không được để trống        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:37</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Kết quả khớp với mong đợi</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="20"
+          author=""
+          tag="Đăng nhập "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_004: Đăng nhập thành công</p>
+            <p class="text-sm">
+              <span>6:59:37 PM</span> / <span>2514.28 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_004: Đăng nhập thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:37 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 6:59:40 PM</span>
+                  <span class='badge badge-default'>2514.28 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Đăng nhập</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:37</td>
+        <td>
+Nhập Username: admin, Password: 123456        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:38</td>
+        <td>
+Nhấn nút Đăng nhập        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:39</td>
+        <td>
+Thông báo mong đợi: Chúc mừng bạn đã đăng nhập thành công!        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:39</td>
+        <td>
+Thực tế: Chúc mừng bạn đã đăng nhập thành công!        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:39</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Kết quả khớp với mong đợi</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:40</td>
+        <td>
+Đăng xuất sau khi đăng nhập thành công để trả về trạng thái ban đầu        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="21"
+          author=""
+          tag="Thêm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_004: Thêm bệnh nhân thành công</p>
+            <p class="text-sm">
+              <span>6:59:49 PM</span> / <span>12327.53 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_004: Thêm bệnh nhân thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 6:59:49 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:01 PM</span>
+                  <span class='badge badge-default'>12327.53 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:49</td>
+        <td>
+Nhấn nút Thêm bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:51</td>
+        <td>
+Nhập thông tin bệnh nhân: Họ tên: Nguyễn Thành Nam, Giới tính: Nam, Ngày sinh: 24/04/2007, SĐT: 0909372148, Địa chỉ: 56 Trần Bình Trọng, CCCD: 445119050712, Email: nguyenthanhnam@gmail.com, Chiều cao: 172, Cân nặng: 65, Dị ứng: Không, Nhóm máu: O+, Tiền sử bệnh án: Không có, Ghi chú: Khám sức khỏe định kỳ        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>18:59:58</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:59</td>
+        <td>
+Mong đợi: 'Thêm bệnh nhân thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>18:59:59</td>
+        <td>
+Thực tế: 'Thêm bệnh nhân thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:00</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:01</td>
+        <td>
+Đã đóng form thêm bệnh nhân        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="22"
+          author=""
+          tag="Thêm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_005: Thêm bệnh nhân thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>7:00:01 PM</span> / <span>10831.46 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_005: Thêm bệnh nhân thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:01 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:12 PM</span>
+                  <span class='badge badge-default'>10831.46 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:01</td>
+        <td>
+Nhấn nút Thêm bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:03</td>
+        <td>
+Nhập thông tin bệnh nhân: Họ tên: Trần Thị Mai Nhi, Giới tính: , Ngày sinh: 14/08/2007, SĐT: 0912345678, Địa chỉ: , CCCD: 123456789012, Email: maihnhi2005@yahoo.com, Chiều cao: 160, Cân nặng: 50, Dị ứng: Hải sản, Nhóm máu: B+, Tiền sử bệnh án: Tiểu đường, Ghi chú: Đã điều trị ổn định        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:09</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:11</td>
+        <td>
+Mong đợi: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:11</td>
+        <td>
+Thực tế: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:11</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:12</td>
+        <td>
+Đã đóng form thêm bệnh nhân        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="23"
+          author=""
+          tag="Thêm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_006: Thêm bệnh nhân thất bại với ngày sinh không hợp lệ</p>
+            <p class="text-sm">
+              <span>7:00:12 PM</span> / <span>11687.59 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_006: Thêm bệnh nhân thất bại với ngày sinh không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:12 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:24 PM</span>
+                  <span class='badge badge-default'>11687.59 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:12</td>
+        <td>
+Nhấn nút Thêm bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:14</td>
+        <td>
+Nhập thông tin bệnh nhân: Họ tên: Lê Văn Hùng, Giới tính: Nam, Ngày sinh: 02/11/2050, SĐT: 0987654321, Địa chỉ: 45 Nguyễn Thị Minh Khai, CCCD: 321654987152, Email: levanhung98@gmail.com, Chiều cao: 180, Cân nặng: 75, Dị ứng: Bụi nhà, Nhóm máu: A-, Tiền sử bệnh án: Viêm xoang mãn tính, Ghi chú: Cần kiểm tra định kỳ        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:21</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:23</td>
+        <td>
+Mong đợi: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:23</td>
+        <td>
+Thực tế: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:23</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:24</td>
+        <td>
+Đã đóng form thêm bệnh nhân        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="24"
+          author=""
+          tag="Thêm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_007: Thêm bệnh nhân thất bại khi nhập email không đúng định dạng</p>
+            <p class="text-sm">
+              <span>7:00:24 PM</span> / <span>11658.06 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_007: Thêm bệnh nhân thất bại khi nhập email không đúng định dạng</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:24 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:36 PM</span>
+                  <span class='badge badge-default'>11658.06 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:24</td>
+        <td>
+Nhấn nút Thêm bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:26</td>
+        <td>
+Nhập thông tin bệnh nhân: Họ tên: Phạm Ngọc Bích, Giới tính: Nữ, Ngày sinh: 30/12/2000, SĐT: 0909123456, Địa chỉ: 78 Hai Bà Trưng, CCCD: 789456123074, Email: pnbich, Chiều cao: 158, Cân nặng: 48, Dị ứng: Không, Nhóm máu: O-, Tiền sử bệnh án: Đã từng phẫu thuật ruột thừa, Ghi chú: Báo bác sĩ nếu cần chụp CT        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:33</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:35</td>
+        <td>
+Mong đợi: 'Email không đúng định dạng!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:35</td>
+        <td>
+Thực tế: 'Email không đúng định dạng!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:35</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:36</td>
+        <td>
+Đã đóng form thêm bệnh nhân        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="25"
+          author=""
+          tag="Thêm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_008: Thêm bệnh nhân thất bại khi nhập sai CMND/CCCD</p>
+            <p class="text-sm">
+              <span>7:00:36 PM</span> / <span>11375.7 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_008: Thêm bệnh nhân thất bại khi nhập sai CMND/CCCD</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:36 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:47 PM</span>
+                  <span class='badge badge-default'>11375.7 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:36</td>
+        <td>
+Nhấn nút Thêm bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:37</td>
+        <td>
+Nhập thông tin bệnh nhân: Họ tên: Đỗ Minh Quân, Giới tính: Nam, Ngày sinh: 05/05/1995, SĐT: 0938123456, Địa chỉ: 34 Lê Lợi, CCCD: 56473, Email: dmquan95@gmail.com, Chiều cao: 170, Cân nặng: 68, Dị ứng: Thuốc kháng sinh, Nhóm máu: B-, Tiền sử bệnh án: Hen suyễn nhẹ, Ghi chú: Tránh khói bụi khi vận động        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:44</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:46</td>
+        <td>
+Mong đợi: 'CCCD phải gồm đúng 12 số!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:46</td>
+        <td>
+Thực tế: 'CCCD phải gồm đúng 12 số!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:46</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:47</td>
+        <td>
+Đã đóng form thêm bệnh nhân        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="26"
+          author=""
+          tag="Xóa bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_002: Xóa bệnh nhân thành công</p>
+            <p class="text-sm">
+              <span>7:00:49 PM</span> / <span>4024.53 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_002: Xóa bệnh nhân thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:49 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:00:53 PM</span>
+                  <span class='badge badge-default'>4024.53 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Xóa bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:49</td>
+        <td>
+Số dòng trước khi xóa: 10        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:49</td>
+        <td>
+Xóa nhân viên đầu tiên trong danh sách        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:53</td>
+        <td>
+Số dòng sau khi xóa: 9        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:00:53</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Xóa bệnh nhân thành công</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="27"
+          author=""
+          tag="Sửa bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_018: Sửa thông tin bệnh nhân thành công</p>
+            <p class="text-sm">
+              <span>7:00:55 PM</span> / <span>18584.13 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_018: Sửa thông tin bệnh nhân thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 7:00:55 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:01:14 PM</span>
+                  <span class='badge badge-default'>18584.13 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:00:55</td>
+        <td>
+Tìm bệnh nhân cần sửa: nam        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:00</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:00</td>
+        <td>
+Mở form sửa bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:00</td>
+        <td>
+Nhập thông tin mới: Họ tên: Nguyễn Thành Nam, Giới tính: Nam, Ngày sinh: 24/04/2007, SĐT: 0909521423, Địa chỉ: 56 Trần Bình Trọng, CCCD: 445119050712, Email: quynh@gmail.com, Chiều cao: 172, Cân nặng: 65, Dị ứng: Không, Nhóm máu: O+, Tiền sử bệnh án: Không có, Ghi chú: Khám sức khỏe định kỳ        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:08</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:14</td>
+        <td>
+Mong đợi: 'Cập nhật thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:14</td>
+        <td>
+Thực tế: 'Email không hợp lệ!'        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="28"
+          author=""
+          tag="Sửa bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_019: Sửa thông tin bệnh nhân thất bại khi nhập thiếu các trường bắt buộc</p>
+            <p class="text-sm">
+              <span>7:01:14 PM</span> / <span>17312.47 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_019: Sửa thông tin bệnh nhân thất bại khi nhập thiếu các trường bắt buộc</h5>
+                  <span class='badge badge-success'>12/1/2025 7:01:14 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:01:31 PM</span>
+                  <span class='badge badge-default'>17312.47 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:14</td>
+        <td>
+Tìm bệnh nhân cần sửa: nam        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:18</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:18</td>
+        <td>
+Mở form sửa bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:18</td>
+        <td>
+Nhập thông tin mới: Họ tên: Nguyễn Thành Nam, Giới tính: Nữ, Ngày sinh: , SĐT: , Địa chỉ: , CCCD: 1234567890, Email: maihnhi2005@yahoo.com, Chiều cao: 160, Cân nặng: 50, Dị ứng: Hải sản, Nhóm máu: B+, Tiền sử bệnh án: Tiểu đường, Ghi chú: Đã điều trị ổn định        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:25</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:31</td>
+        <td>
+Mong đợi: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:31</td>
+        <td>
+Thực tế: 'Vui lòng điền đầy đủ các trường bắt buộc!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:31</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="29"
+          author=""
+          tag="Sửa bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_020: Sửa thông tin bệnh nhân thất bại khi nhập ngày sinh không hợp lệ</p>
+            <p class="text-sm">
+              <span>7:01:31 PM</span> / <span>18907.2 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_020: Sửa thông tin bệnh nhân thất bại khi nhập ngày sinh không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 7:01:31 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:01:50 PM</span>
+                  <span class='badge badge-default'>18907.2 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:31</td>
+        <td>
+Tìm bệnh nhân cần sửa: nam        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:36</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:36</td>
+        <td>
+Mở form sửa bệnh nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:36</td>
+        <td>
+Nhập thông tin mới: Họ tên: Nguyễn Thành Nam, Giới tính: Nam, Ngày sinh: 02/11/2050, SĐT: 0987654321, Địa chỉ: 45 Nguyễn Thị Minh Khai, CCCD: 3216549871, Email: levanhung98@gmail.com, Chiều cao: 180, Cân nặng: 75, Dị ứng: Bụi nhà, Nhóm máu: A-, Tiền sử bệnh án: Viêm xoang mãn tính, Ghi chú: Cần kiểm tra định kỳ        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:44</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:50</td>
+        <td>
+Mong đợi: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:50</td>
+        <td>
+Thực tế: 'Ngày sinh không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:50</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="30"
+          author=""
+          tag="Tìm kiếm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_024: Tìm bệnh nhân theo họ tên</p>
+            <p class="text-sm">
+              <span>7:01:52 PM</span> / <span>3770.73 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_024: Tìm bệnh nhân theo họ tên</h5>
+                  <span class='badge badge-success'>12/1/2025 7:01:52 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:01:56 PM</span>
+                  <span class='badge badge-default'>3770.73 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:52</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = 'đức', SĐT = ''        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:52</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:56</td>
+        <td>
+Dữ liệu mong đợi: Thân Trọng Đức        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:56</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:56</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm bệnh nhân thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="31"
+          author=""
+          tag="Tìm kiếm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_025: Tìm bệnh nhân theo số điện thoại</p>
+            <p class="text-sm">
+              <span>7:01:56 PM</span> / <span>3526.08 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_025: Tìm bệnh nhân theo số điện thoại</h5>
+                  <span class='badge badge-success'>12/1/2025 7:01:56 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:01:59 PM</span>
+                  <span class='badge badge-default'>3526.08 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:56</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = '', SĐT = '0935423378'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:56</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:59</td>
+        <td>
+Dữ liệu mong đợi: Nguyễn Thị Kim Loan        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:59</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:01:59</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm bệnh nhân thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="32"
+          author=""
+          tag="Tìm kiếm bệnh nhân "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_026: Tìm bệnh nhân theo cả họ tên và số điện thoại</p>
+            <p class="text-sm">
+              <span>7:01:59 PM</span> / <span>3750.24 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_026: Tìm bệnh nhân theo cả họ tên và số điện thoại</h5>
+                  <span class='badge badge-success'>12/1/2025 7:01:59 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:03 PM</span>
+                  <span class='badge badge-default'>3750.24 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm bệnh nhân</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:59</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = 'mạnh', SĐT = '9554'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:01:59</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:03</td>
+        <td>
+Dữ liệu mong đợi: Phạm Văn Mạnh, Nguyễn Gia Hạnh        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:03</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:03</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm bệnh nhân thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="33"
+          author=""
+          tag="Thêm vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_009: Thêm vật tư thành công</p>
+            <p class="text-sm">
+              <span>7:02:05 PM</span> / <span>7098.33 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">TC_009: Thêm vật tư thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:05 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:12 PM</span>
+                  <span class='badge badge-default'>7098.33 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:05</td>
+        <td>
+Nhấn nút Thêm vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:06</td>
+        <td>
+Nhập thông tin vật tư: Tên vật tư: Găng tay y tế, Số lượng: 100, Đơn vị tính: Hộp, Đơn giá: 50000, Ngày nhập: 10/06/2025, Ngày hết hạn: 10/06/2026, Nhà cung cấp: Công ty A        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:08</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:11</td>
+        <td>
+Mong đợi: 'Thêm vật tư thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:11</td>
+        <td>
+Thực tế: 'Số lượng:'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>19:02:11</td>
+        <td>
+<span class='badge white-text red'>Test case fail: Thông báo không khớp</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:12</td>
+        <td>
+Đã đóng form thêm vật tư        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="34"
+          author=""
+          tag="Thêm vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_010: Thêm vật tư thất bại khi ngày nhập hàng không hợp lệ</p>
+            <p class="text-sm">
+              <span>7:02:12 PM</span> / <span>7096.8 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">TC_010: Thêm vật tư thất bại khi ngày nhập hàng không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:12 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:19 PM</span>
+                  <span class='badge badge-default'>7096.8 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:12</td>
+        <td>
+Nhấn nút Thêm vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:13</td>
+        <td>
+Nhập thông tin vật tư: Tên vật tư: Khẩu trang N95, Số lượng: 200, Đơn vị tính: Hộp, Đơn giá: 150000, Ngày nhập: 11/06/2050, Ngày hết hạn: 12/08/2060, Nhà cung cấp: Công ty B        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:15</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:18</td>
+        <td>
+Mong đợi: 'Ngày nhập hàng không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:18</td>
+        <td>
+Thực tế: 'Số lượng:'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>19:02:18</td>
+        <td>
+<span class='badge white-text red'>Test case fail: Thông báo không khớp</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:19</td>
+        <td>
+Đã đóng form thêm vật tư        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="35"
+          author=""
+          tag="Thêm vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_011: Thêm vật tư thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>7:02:19 PM</span> / <span>6581.74 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_011: Thêm vật tư thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:19 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:26 PM</span>
+                  <span class='badge badge-default'>6581.74 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Thêm vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:19</td>
+        <td>
+Nhấn nút Thêm vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:20</td>
+        <td>
+Nhập thông tin vật tư: Tên vật tư: , Số lượng: 50, Đơn vị tính: Chai, Đơn giá: 80000, Ngày nhập: 12/06/2025, Ngày hết hạn: , Nhà cung cấp: Công ty C        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:22</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:24</td>
+        <td>
+Mong đợi: 'Vui lòng điền đầy đủ thông tin!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:24</td>
+        <td>
+Thực tế: 'Vui lòng điền đầy đủ thông tin!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:24</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:26</td>
+        <td>
+Đã đóng form thêm vật tư        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="fail" test-id="36"
+          author=""
+          tag="Xóa vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_003: Xóa vật tư thành công</p>
+            <p class="text-sm">
+              <span>7:02:28 PM</span> / <span>4020.53 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-fail">TC_003: Xóa vật tư thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:28 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:32 PM</span>
+                  <span class='badge badge-default'>4020.53 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Xóa vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:28</td>
+        <td>
+Số dòng trước khi xóa: 1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:28</td>
+        <td>
+Xóa nhân viên đầu tiên trong danh sách        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:32</td>
+        <td>
+Số dòng sau khi xóa: 1        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>19:02:32</td>
+        <td>
+<span class='badge white-text red'>Test case fail: Xóa vật tư thất bại</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="37"
+          author=""
+          tag="Sửa vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_020: Sửa thông tin vât tư thành công</p>
+            <p class="text-sm">
+              <span>7:02:34 PM</span> / <span>12648.05 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_020: Sửa thông tin vât tư thành công</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:34 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:46 PM</span>
+                  <span class='badge badge-default'>12648.05 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:34</td>
+        <td>
+Tìm vật tư cần sửa: găng        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:38</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:38</td>
+        <td>
+Mở form sửa vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:38</td>
+        <td>
+Nhập thông tin mới: Tên vật tư: Găng tay y tế, Số lượng: 100, Đơn vị tính: Cuộn, Đơn giá: 35000, Ngày nhập: 10/06/2025, Ngày hết hạn: 10/06/2026, Nhà cung cấp: Công ty A        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:41</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:46</td>
+        <td>
+Mong đợi: 'Cập nhật thành công!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:46</td>
+        <td>
+Thực tế: 'Số lượng:'        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="38"
+          author=""
+          tag="Sửa vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_021: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ</p>
+            <p class="text-sm">
+              <span>7:02:46 PM</span> / <span>12689.97 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_021: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:46 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:02:59 PM</span>
+                  <span class='badge badge-default'>12689.97 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:46</td>
+        <td>
+Tìm vật tư cần sửa: găng        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:51</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:51</td>
+        <td>
+Mở form sửa vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:51</td>
+        <td>
+Nhập thông tin mới: Tên vật tư: Găng tay y tế, Số lượng: 200, Đơn vị tính: Chai, Đơn giá: 150000, Ngày nhập: 11/06/2050, Ngày hết hạn: 12/08/2025, Nhà cung cấp: Công ty B        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:54</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:59</td>
+        <td>
+Mong đợi: 'Ngày nhập không hợp lệ!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:02:59</td>
+        <td>
+Thực tế: 'Số lượng:'        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="39"
+          author=""
+          tag="Sửa vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_022: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin</p>
+            <p class="text-sm">
+              <span>7:02:59 PM</span> / <span>11918.06 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_022: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin</h5>
+                  <span class='badge badge-success'>12/1/2025 7:02:59 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:03:11 PM</span>
+                  <span class='badge badge-default'>11918.06 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sửa vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:02:59</td>
+        <td>
+Tìm vật tư cần sửa: găng        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:03</td>
+        <td>
+Click chuột phải, chọn 'Sửa'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:03</td>
+        <td>
+Mở form sửa vật tư        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:03</td>
+        <td>
+Nhập thông tin mới: Tên vật tư: Găng tay y tế, Số lượng: 50, Đơn vị tính: , Đơn giá: , Ngày nhập: 12/06/2025, Ngày hết hạn: 11/01/2024, Nhà cung cấp:         </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:05</td>
+        <td>
+Nhấn nút Lưu        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:11</td>
+        <td>
+Mong đợi: 'Vui lòng điền đầy đủ thông tin!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:11</td>
+        <td>
+Thực tế: 'Vui lòng điền đầy đủ thông tin!'        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:11</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Thông báo chính xác</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="40"
+          author=""
+          tag="Tìm kiếm vật tư "
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_031: Tìm vật tư theo tên</p>
+            <p class="text-sm">
+              <span>7:03:13 PM</span> / <span>3445.87 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">TC_031: Tìm vật tư theo tên</h5>
+                  <span class='badge badge-success'>12/1/2025 7:03:13 PM</span>
+                  <span class='badge badge-danger'>12/1/2025 7:03:17 PM</span>
+                  <span class='badge badge-default'>3445.87 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+ <div class="m-t-15"> <span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Tìm kiếm vật tư</span> </div>               </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:13</td>
+        <td>
+Nhập vào ô tìm kiếm: Tên = 'keo', Nhà cung cấp = ''        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>19:03:13</td>
+        <td>
+Nhấn nút Tìm kiếm        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:17</td>
+        <td>
+Dữ liệu mong đợi: Băng keo cá nhân        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:17</td>
+        <td>
+Dữ liệu thực tế:        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>19:03:17</td>
+        <td>
+<span class='badge white-text green'>Test case pass: Tìm kiếm vật tư thành công!</span>        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+
+<div class="test-wrapper row view category-view attributes-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+      <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">13</span></a></li></ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>             </span>
+            <p class="name">Tìm kiếm bệnh nhân</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Tìm kiếm bệnh nhân</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:01:52 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='30' id='30'>TC_024: Tìm bệnh nhân theo họ tên</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:01:56 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='31' id='31'>TC_025: Tìm bệnh nhân theo số điện thoại</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:01:59 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='32' id='32'>TC_026: Tìm bệnh nhân theo cả họ tên và số điện thoại</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>             </span>
+            <p class="name">Sửa vật tư</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Sửa vật tư</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:02:34 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='37' id='37'>TC_020: Sửa thông tin vât tư thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:02:46 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='38' id='38'>TC_021: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:02:59 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='39' id='39'>TC_022: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>5</span>             </span>
+            <p class="name">Thêm bệnh nhân</p>
+            <p class="duration text-sm">5 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Thêm bệnh nhân</h4>
+ <span status="pass" class='badge log pass-bg'>5 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:49 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='21' id='21'>TC_004: Thêm bệnh nhân thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:01 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='22' id='22'>TC_005: Thêm bệnh nhân thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:12 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='23' id='23'>TC_006: Thêm bệnh nhân thất bại với ngày sinh không hợp lệ</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:24 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='24' id='24'>TC_007: Thêm bệnh nhân thất bại khi nhập email không đúng định dạng</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:36 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='25' id='25'>TC_008: Thêm bệnh nhân thất bại khi nhập sai CMND/CCCD</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>1</span>             </span>
+            <p class="name">Tìm kiếm vật tư</p>
+            <p class="duration text-sm">1 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Tìm kiếm vật tư</h4>
+ <span status="pass" class='badge log pass-bg'>1 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:03:13 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='40' id='40'>TC_031: Tìm vật tư theo tên</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log badge-danger'>1</span>             </span>
+            <p class="name">Xóa vật tư</p>
+            <p class="duration text-sm">1 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Xóa vật tư</h4>
+ <span status="fail" class='badge log badge-danger'>1 failed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>7:02:28 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='36' id='36'>TC_003: Xóa vật tư thành công</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>4</span>             </span>
+            <p class="name">Đăng nhập</p>
+            <p class="duration text-sm">4 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Đăng nhập</h4>
+ <span status="pass" class='badge log pass-bg'>4 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:30 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='17' id='17'>TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:32 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='18' id='18'>TC_002: Đăng nhập thất bại với tài khoản để trống</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:35 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='19' id='19'>TC_003: Đăng nhập thất bại với mật khẩu để trống</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:37 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='20' id='20'>TC_004: Đăng nhập thành công</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>1</span>             </span>
+            <p class="name">Xóa bệnh nhân</p>
+            <p class="duration text-sm">1 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Xóa bệnh nhân</h4>
+ <span status="pass" class='badge log pass-bg'>1 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:49 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='26' id='26'>TC_002: Xóa bệnh nhân thành công</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>1</span>  <span class='badge log badge-danger'>2</span>             </span>
+            <p class="name">Thêm vật tư</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Thêm vật tư</h4>
+ <span status="pass" class='badge log pass-bg'>1 passed</span>  <span status="fail" class='badge log badge-danger'>2 failed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>7:02:05 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='33' id='33'>TC_009: Thêm vật tư thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>7:02:12 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='34' id='34'>TC_010: Thêm vật tư thất bại khi ngày nhập hàng không hợp lệ</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:02:19 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='35' id='35'>TC_011: Thêm vật tư thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>             </span>
+            <p class="name">Sửa nhân viên</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Sửa nhân viên</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:58:15 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='5' id='5'>TC_015: Thêm nhân viên thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:58:31 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='6' id='6'>TC_016: Thêm nhân viên thất bại khi nhập thiếu các trường bắt buộc</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:58:46 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='7' id='7'>TC_017: Thêm nhân viên thất bại khi nhập ngày sinh không hợp lệ</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>             </span>
+            <p class="name">Sửa bệnh nhân</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Sửa bệnh nhân</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:00:55 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='27' id='27'>TC_018: Sửa thông tin bệnh nhân thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:01:14 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='28' id='28'>TC_019: Sửa thông tin bệnh nhân thất bại khi nhập thiếu các trường bắt buộc</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>7:01:31 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='29' id='29'>TC_020: Sửa thông tin bệnh nhân thất bại khi nhập ngày sinh không hợp lệ</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>             </span>
+            <p class="name">Tìm kiếm nhân viên</p>
+            <p class="duration text-sm">3 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Tìm kiếm nhân viên</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:05 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='8' id='8'>TC_021: Tìm nhân viên theo họ tên</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:09 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='9' id='9'>TC_022: Tìm nhân viên theo số điện thoại</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:12 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='10' id='10'>TC_023: Tìm nhân viên theo cả họ tên và số điện thoại</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>6</span>             </span>
+            <p class="name">Đổi mật khẩu</p>
+            <p class="duration text-sm">6 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Đổi mật khẩu</h4>
+ <span status="pass" class='badge log pass-bg'>6 passed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:18 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='11' id='11'>TC_011: Đổi mật khẩu thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:20 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='12' id='12'>TC_012: Đổi mật khẩu thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:21 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='13' id='13'>TC_013: Đổi mật khẩu thất bại khi nhập thiếu thông tin</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:23 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='14' id='14'>TC_014: Đổi mật khẩu thất bại khi nhập trùng mật khẩu mới và cũ</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:24 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='15' id='15'>TC_015: Đổi mật khẩu thất bại khi nhập mật khẩu cũ không đúng</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:59:26 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='16' id='16'>TC_016: Đổi mật khẩu thành công</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li class="test-item">
+          <div class="test-detail">
+            <span class="meta">
+ <span class='badge log pass-bg'>3</span>  <span class='badge log badge-danger'>1</span>             </span>
+            <p class="name">Thêm nhân viên</p>
+            <p class="duration text-sm">4 tests</p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="info">
+              <h4>Thêm nhân viên</h4>
+ <span status="pass" class='badge log pass-bg'>3 passed</span>  <span status="fail" class='badge log badge-danger'>1 failed</span>             </div>
+            <table class='table table-sm mt-4'>
+              <thead>
+                <tr>
+                  <th class="status-col">Status</th>
+                  <th class="timestamp-col">Timestamp</th>
+                  <th>TestName</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:57:41 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='1' id='1'>TC_001: Thêm nhân viên thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:57:53 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='2' id='2'>TC_002: Thêm nhân viên thất bại với họ tên không hợp lệ</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="pass">
+                  <td><span class="badge log pass-bg">Pass</span></td>
+                  <td>6:58:00 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='3' id='3'>TC_003: Thêm nhân viên thành công</a>
+                  </td>
+                </tr>
+                <tr class="tag-test-status" status="fail">
+                  <td><span class="badge log fail-bg">Fail</span></td>
+                  <td>6:58:10 PM</td>
+                  <td>
+                    <a href="#" class="linked" test-id='4' id='4'>TC_001: Xóa nhân viên thành công</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-detail">
+      <div class="detail-body"></div>
+    </div>
+  </div>
+</div>
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>12/1/2025 6:57:39 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>12/1/2025 7:03:17 PM</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>36</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>4</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'>
+            <b>36</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>4</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>98</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>4</b> events failed, 
+            <b data-tooltip='%'>147</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "TC_001: Thêm nhân viên thành công":7520.9642,"TC_002: Thêm nhân viên thất bại với họ tên không hợp lệ":6919.1624,"TC_003: Thêm nhân viên thành công":8175.4754,"TC_001: Xóa nhân viên thành công":3218.8381,"TC_015: Thêm nhân viên thành công":15547.5911,"TC_016: Thêm nhân viên thất bại khi nhập thiếu các trường bắt buộc":15257.7644,"TC_017: Thêm nhân viên thất bại khi nhập ngày sinh không hợp lệ":17186.6814,"TC_021: Tìm nhân viên theo họ tên":3472.6381,"TC_022: Tìm nhân viên theo số điện thoại":3467.3206,"TC_023: Tìm nhân viên theo cả họ tên và số điện thoại":3737.6593,"TC_011: Đổi mật khẩu thất bại khi nhập thiếu thông tin":1528.4409,"TC_012: Đổi mật khẩu thất bại khi nhập thiếu thông tin":1522.5033,"TC_013: Đổi mật khẩu thất bại khi nhập thiếu thông tin":1508.4665,"TC_014: Đổi mật khẩu thất bại khi nhập trùng mật khẩu mới và cũ":1531.3419,"TC_015: Đổi mật khẩu thất bại khi nhập mật khẩu cũ không đúng":1506.7493,"TC_016: Đổi mật khẩu thành công":1571.4432,"TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng":1806.2019,"TC_002: Đăng nhập thất bại với tài khoản để trống":2042.793,"TC_003: Đăng nhập thất bại với mật khẩu để trống":1974.6003,"TC_004: Đăng nhập thành công":2514.2753,"TC_004: Thêm bệnh nhân thành công":12327.5257,"TC_005: Thêm bệnh nhân thất bại khi nhập thiếu thông tin":10831.4591,"TC_006: Thêm bệnh nhân thất bại với ngày sinh không hợp lệ":11687.5941,"TC_007: Thêm bệnh nhân thất bại khi nhập email không đúng định dạng":11658.0649,"TC_008: Thêm bệnh nhân thất bại khi nhập sai CMND/CCCD":11375.6986,"TC_002: Xóa bệnh nhân thành công":4024.5275,"TC_018: Sửa thông tin bệnh nhân thành công":18584.129,"TC_019: Sửa thông tin bệnh nhân thất bại khi nhập thiếu các trường bắt buộc":17312.4658,"TC_020: Sửa thông tin bệnh nhân thất bại khi nhập ngày sinh không hợp lệ":18907.1984,"TC_024: Tìm bệnh nhân theo họ tên":3770.7304,"TC_025: Tìm bệnh nhân theo số điện thoại":3526.0786,"TC_026: Tìm bệnh nhân theo cả họ tên và số điện thoại":3750.2417,"TC_009: Thêm vật tư thành công":7098.3319,"TC_010: Thêm vật tư thất bại khi ngày nhập hàng không hợp lệ":7096.7956,"TC_011: Thêm vật tư thất bại khi nhập thiếu thông tin":6581.741,"TC_003: Xóa vật tư thành công":4020.5298,"TC_020: Sửa thông tin vât tư thành công":12648.0457,"TC_021: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ":12689.9668,"TC_022: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin":11918.059,"TC_031: Tìm vật tư theo tên":3445.8669 };
+  </script>
+  <div class="row">
+    <div class="col-md-4 category-container">
+      <div class="card">
+        <div class="card-header"><p>Tags</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+            <tr>
+              <td>Tìm kiếm bệnh nhân</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Sửa vật tư</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Thêm bệnh nhân</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Tìm kiếm vật tư</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Xóa vật tư</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>Đăng nhập</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Xóa bệnh nhân</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Thêm vật tư</td>
+              <td>1</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td>Sửa nhân viên</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Sửa bệnh nhân</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Tìm kiếm nhân viên</td>
+              <td>3</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Đổi mật khẩu</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Thêm nhân viên</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>75%</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 40,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 249,
+
+passParent:36,failParent:4,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:98,failEvents:4,warningEvents:0,skipEvents:0,infoEvents:147,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>
