@@ -1,6 +1,7 @@
 ﻿using AventStack.ExtentReports.MarkupUtils;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,53 +10,54 @@ namespace ClinicApp_Test.Extent
 {
     public static class ExtentLogger
     {
-        public static void pass(ExtentTest test, string message)
-        {
-            test.Pass(message);
-        }
-        public static void fail(ExtentTest test, string message)
-        {
-            test.Fail(message);
-        }
-        public static void info(ExtentTest test, string message)
+        public static void Success(ExtentTest test, string message) => test.Pass(message);
+        public static void Error(ExtentTest test, string message) => test.Fail(message);
+        public static void Info(ExtentTest test, string message)
         {
             test.Info(message);
         }
-
-
-        public static void passHighlight(ExtentTest test, string message)
-        {
-            test.Pass(MarkupHelper.CreateLabel(message, ExtentColor.Green));
-        }
-        public static void failHighlight(ExtentTest test, string message)
-        {
-            test.Fail(MarkupHelper.CreateLabel(message, ExtentColor.Red));
-        }
-        /*-----------------------Screenshot Methods*/
-        public static string CaptureScreenshot(AutomationElement element, string fileNamePrefix = "Screenshot")
+        public static void AttachScreenshotBase64(ExtentTest test)
         {
             try
             {
-                var bmp = element.Capture();
-                string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Screenshots");
-                Directory.CreateDirectory(dir);
-                string filePath = Path.Combine(dir, $"{fileNamePrefix}_{DateTime.Now:yyyyMMdd_HHmmss}.png");
-                bmp.Save(filePath, ImageFormat.Png);
-                return filePath;
+                // Lấy kích thước màn hình chính
+                int width = 1920; // hoặc chỉnh theo màn hình test
+                int height = 1080;
+
+                using var bmp = new Bitmap(width, height);
+                using var g = Graphics.FromImage(bmp);
+                g.CopyFromScreen(0, 0, 0, 0, bmp.Size);
+
+                using var ms = new MemoryStream();
+                bmp.Save(ms, ImageFormat.Png);
+                string base64 = Convert.ToBase64String(ms.ToArray());
+
+                test.Info("Screenshot:", MediaEntityBuilder.CreateScreenCaptureFromBase64String(base64).Build());
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine($"Capture screenshot failed: {ex.Message}");
-                return null;
+                test.Warning("Không chụp được screenshot.");
             }
         }
 
-        public static void AttachScreenshot(ExtentTest test, string screenshotPath, string message = "")
+        public static void Pass(ExtentTest test, string message)
         {
-            if (!string.IsNullOrEmpty(screenshotPath) && File.Exists(screenshotPath))
-            {
-                test.AddScreenCaptureFromPath(screenshotPath, message);
-            }
+            test.Pass(MarkupHelper.CreateLabel(message, ExtentColor.Green));
+            AttachScreenshotBase64(test);
         }
+        public static void PassWithoutScreenshot(ExtentTest test, string message)
+        {
+            test.Pass(MarkupHelper.CreateLabel(message, ExtentColor.Green));
+        }
+        public static void Fail(ExtentTest test, string message)
+        {
+            test.Fail(MarkupHelper.CreateLabel(message, ExtentColor.Red));
+            AttachScreenshotBase64(test);
+        }
+        public static void FailWithoutScreenshot(ExtentTest test, string message)
+        {
+            test.Fail(MarkupHelper.CreateLabel(message, ExtentColor.Red));
+        }
+        
     }
 }

@@ -39,8 +39,8 @@ namespace ClinicApp_Test.Forms
         private Button BtnSave => _window.FindFirstDescendant(cf => cf.ByAutomationId("btn_Save"))?.AsButton();
         private Button BtnCancel => _window.FindFirstDescendant(cf => cf.ByAutomationId("btn_Cancel"))?.AsButton();
 
-        public void EnterPatientInfo(string hoTen, string gioiTinh, string ngaySinh, string sdt, string diaChi, string email,
-                                     string cmnd, string chieucao, string cannang, string diung, string nhommau, string tiensubenhan, string ghichu)
+        public void EnterPatientInfo(string hoTen, string gioiTinh, string ngaySinh, string sdt, string diaChi, string cmnd,
+                                     string email, string chieucao, string cannang, string diung, string nhommau, string tiensubenhan, string ghichu)
         {
             ClearAndEnter(TxtHoTen, hoTen);
             ClearAndEnter(TxtGioiTinh, gioiTinh);

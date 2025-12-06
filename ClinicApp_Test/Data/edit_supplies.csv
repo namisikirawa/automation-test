@@ -1,6 +1,6 @@
 testCaseName,tenCanTim,tenVatTu,SL,DVT,donGia,ngayNhap,ngayHetHan,nhaCungCap,expectedMessage
-TC_020: Sửa thông tin vât tư thành công,găng,Găng tay y tế,100,Cuộn,35000,10/06/2025,10/06/2026,Công ty A,Cập nhật thành công!
-TC_021: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ,găng,Găng tay y tế,200,Chai,150000,11/06/2050,12/08/2025,Công ty B,Ngày nhập không hợp lệ!
-TC_022: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin,găng,Găng tay y tế,50,,,12/06/2025,11/01/2024,,Vui lòng điền đầy đủ thông tin!
+TC_040: Sửa thông tin vât tư thành công,cồn,Găng tay y tế,100,Cuộn,35000,10/06/2025,10/06/2026,Công ty A,Cập nhật thành công!
+TC_041: Sửa thông tin vật tư thất bại khi ngày nhập hàng không hợp lệ,cồn,Găng tay y tế,200,Chai,150000,11/06/2050,12/08/2025,Công ty B,Ngày nhập không hợp lệ!
+TC_042: Sửa thông tin vật tư thất bại khi nhập thiếu thông tin,cồng,Găng tay y tế,50,,,12/06/2025,11/01/2024,,Vui lòng điền đầy đủ thông tin!
 
 

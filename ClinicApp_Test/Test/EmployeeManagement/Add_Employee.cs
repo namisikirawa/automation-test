@@ -60,11 +60,14 @@ namespace ClinicApp_Test.Test.EmployeeManagement
             _test.AssignCategory("Thêm nhân viên");
             try
             {
-                ExtentLogger.info(_test, "Nhấn nút Thêm nhân viên");
+                //số nhân viên trước khi thêm
+                int beforeCount = employeeForm.GetRowCount();
+
+                ExtentLogger.Info(_test, "Nhấn nút 'Thêm mới'");
                 employeeForm.ClickAddButton();
 
                 var addForm = new AddEmployee_Form(GlobalSetup.mainWindow);
-                ExtentLogger.info(_test, $"Nhập thông tin nhân viên: " +
+                ExtentLogger.Info(_test, $"Nhập thông tin nhân viên: " +
                     $"Họ tên: {hoTen}, " +
                     $"Giới tính: {gioiTinh}, " +
                     $"Ngày sinh: {ngaySinh}, " +
@@ -78,22 +81,44 @@ namespace ClinicApp_Test.Test.EmployeeManagement
                 );
                 addForm.EnterEmployeeInfo(hoTen, gioiTinh, ngaySinh, sdt, diaChi,email, chucVu, gioLamViec, bangCap, knLamViec);
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test, "Nhấn nút Lưu");
                 addForm.ClickSave(GlobalSetup.automation, GlobalSetup.app.ProcessId);
                 Thread.Sleep(500);
 
                 string actualMessage = addForm.GetMessageBoxText(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMessage}'");
 
-                Assert.AreEqual(expectedMessage, actualMessage);
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMessage}'");
+                if(expectedMessage!= actualMessage) {
+                    ExtentLogger.Fail(_test, "Test case fail: Thông báo không khớp!");
+                    addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+                    Assert.Fail("Message box text mismatch!");
+                }
+
+                //pass phần kiểm tra hộp thoại: screenshot+ thông báo
+                ExtentLogger.Pass(_test, "Thông báo trùng khớp");
                 addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+
+                if (expectedMessage=="Thêm nhân viên thành công!")
+                {
+                    //kiểm tra số nhân viên có tăng thêm 1 không
+                    int afterCount = employeeForm.GetRowCount();
+                    ExtentLogger.Info(_test, $"Số nhân viên trước khi thêm: {beforeCount}");
+                    ExtentLogger.Info(_test, $"Số nhân viên sau khi thêm: {afterCount}");
+
+                    if (afterCount != beforeCount + 1)
+                    {
+                        ExtentLogger.Error(_test, "Số lượng nhân viên không tăng thêm 1 sau khi thêm!");
+                        Assert.Fail("Row count mismatch!");
+                    }
+                }
+
+                ExtentLogger.PassWithoutScreenshot(_test, "Test case passed");
             }
             catch (Exception ex)
             {
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo không khớp");
-                Assert.Fail($"Lỗi: { ex.Message}");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
+                Assert.Fail(ex.Message);
             }
             finally
             {
@@ -102,11 +127,11 @@ namespace ClinicApp_Test.Test.EmployeeManagement
                 {
                     var addForm = new AddEmployee_Form(GlobalSetup.mainWindow);
                     addForm.ClickCancel();
-                    ExtentLogger.info(_test, "Đã đóng form thêm nhân viên");
+                    ExtentLogger.Info(_test, "Đã đóng form thêm nhân viên");
                 }
                 catch (Exception ex)
                 {
-                    ExtentLogger.fail(_test, "Không thể đóng form thêm nhân viên");
+                    ExtentLogger.Error(_test, "Lỗi khi đóng form thêm nhân viên");
                     Assert.Fail($"Lỗi: {ex.Message}");
                 }
             }

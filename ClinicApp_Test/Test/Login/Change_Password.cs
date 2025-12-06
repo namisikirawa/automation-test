@@ -46,25 +46,25 @@ namespace ClinicApp_Test.Test.Login
             _test.AssignCategory("Đổi mật khẩu");
             try
             {
-                ExtentLogger.info(_test, $"Nhập mật khẩu cũ: {oldPass}");
-                ExtentLogger.info(_test, $"Nhập mật khẩu mới: {newPass}");
+                ExtentLogger.Info(_test, $"Nhập mật khẩu cũ: {oldPass}");
+                ExtentLogger.Info(_test, $"Nhập mật khẩu mới: {newPass}");
                 changePasswordForm.EnterOldPassword(oldPass);
                 changePasswordForm.EnterNewPassword(newPass);
 
-                ExtentLogger.info(_test, "Nhấn nút Đổi mật khẩu");
+                ExtentLogger.Info(_test, "Nhấn nút Đổi mật khẩu");
                 changePasswordForm.ClickChangePassword();
 
                 var actualMsg = changePasswordForm.GetMessageBoxTextAndClose(GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Thông báo mong đợi: '{expectedMsg}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMsg}'");
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: '{expectedMsg}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMsg}'");
 
                 Assert.AreEqual(expectedMsg, actualMsg, "Thông báo không khớp!");
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                ExtentLogger.Pass(_test, "Test case pass");
             }
             catch (Exception ex)
             {
                 Assert.Fail("Lỗi trong quá trình test đổi mật khẩu: " + ex.Message);
-                ExtentLogger.failHighlight(_test, "Test case fail: Thông báo không khớp");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
     }

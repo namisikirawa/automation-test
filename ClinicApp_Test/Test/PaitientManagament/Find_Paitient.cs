@@ -1,6 +1,7 @@
 ﻿
 
 using ClinicApp_Test.Extent;
+using ClinicApp_Test.Form;
 using System.Diagnostics;
 
 namespace ClinicApp_Test.Test.PaitientManagament
@@ -54,37 +55,26 @@ namespace ClinicApp_Test.Test.PaitientManagament
             _test.AssignCategory("Tìm kiếm bệnh nhân");
             try
             {
-                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', SĐT = '{phoneNumber}'");
-                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                ExtentLogger.Info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', SĐT = '{phoneNumber}'");
+                ExtentLogger.Info(_test, $"Nhấn nút Tìm kiếm");
                 patientForm.FindPatient(name, phoneNumber);
                 Thread.Sleep(1200);
 
+                ExtentLogger.Info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Info(_test, "Dữ liệu thực tế:");
+                var check = patientForm.VerifySearchResults(expectedCellData);
+
                 var allRows = patientForm.GetAllGridValues();
+                foreach (var row in allRows)
+                    ExtentLogger.Info(_test, string.Join(" | ", row));
 
-                bool allMatch = allRows.All(row =>
-                    row.Any(cell =>
-                        expectedCellData.Any(expected =>
-                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.info(_test, "Dữ liệu thực tế:");
-                for (int i = 0; i < allRows.Count; i++)
-                {
-                    var row = allRows[i];
-                    string rowData = string.Join(" | ", row);
-                    ExtentLogger.pass(_test, $"Dòng {i + 1}: {rowData}");
-                }
-
-                Assert.IsTrue(allMatch,$"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm bệnh nhân thành công!");
-            }
-            catch (AssertFailedException)
-            {
-                throw;
+                Assert.IsTrue(check,$"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Pass(_test, "Test case pass");
             }
             catch (Exception ex)
             {
                 Assert.Fail($"Lỗi trong quá trình test tìm bệnh nhân với tên '{name}' và số điện thoại '{phoneNumber}': {ex.Message}");
-                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm bệnh nhân thất bại!");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
     }

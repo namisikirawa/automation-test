@@ -3,52 +3,52 @@
   "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\find_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\find_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\edit_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\edit_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\delete_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\delete_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\add_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\add_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\suppliesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\suppliesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\find_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\find_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\editpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\editpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\edit_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\edit_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\delete_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\delete_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\add_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\add_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\login\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\login\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\employeemanagement\\find_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\employeemanagement\\find_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\edit_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\edit_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\employeemanagement\\edit_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\employeemanagement\\edit_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\employeemanagement\\find_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\employeemanagement\\find_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\employeemanagement\\delete_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +59,48 @@
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\employeemanagement\\add_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\login.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\login.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\extent\\extentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\extent\\extentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\add_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\add_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\paitientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\paitientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\addemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\addemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\extent\\extentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\extent\\extentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\extent\\extentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\extent\\extentlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\extent\\basetest_report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,40 +111,60 @@
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\extent\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\base\\globalsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\base\\globalsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\employeeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\suppliesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\suppliesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\change_password.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\change_password.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\paitientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\paitientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\login.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\login.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\login\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\login\\change_password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\delete_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\delete_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\paitientmanagament\\delete_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\paitientmanagament\\delete_paitient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\editsupplies_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\editsupplies_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\editpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\editpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\editemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\editemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\test\\suppliesmanagement\\add_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\test\\suppliesmanagement\\add_supplies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\clinicapp_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\clinicapp_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\editsupplies_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\editsupplies_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\changepasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,58 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\addpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\addpatient_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\forms\\addemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\forms\\addemployee_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\base\\globalsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\base\\globalsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\change_password.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\change_password.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_employee.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\find_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\find_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\add_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\add_supplies.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\data\\edit_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\data\\edit_patient.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|d:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\automationtest_project\\clinicapp_test\\clinicapp_test\\clinicapp_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{67BB6170-DB0B-4AC8-9B5C-540EA67881B0}|ClinicApp_Test\\ClinicApp_Test.csproj|solutionrelative:clinicapp_test\\clinicapp_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -186,152 +186,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete_Paitient.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wC4AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.561Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Edit_Paitient.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Find_Paitient.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Find_Paitient.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Find_Paitient.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Find_Paitient.cs",
               "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Find_Paitient.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAD4vzMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T16:15:34.556Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Add_Supplies.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAD4v1gAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Delete_Supplies.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAAC8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit_Supplies.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Find_Supplies.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Find_Supplies.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Find_Supplies.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Find_Supplies.cs",
               "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Find_Supplies.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAD4vzEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T16:15:34.565Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Add_Paitient.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAIwGYAAAAhAAAAAAAAAA==",
+              "Title": "Edit_Paitient.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Edit_Paitient.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAMwF8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.578Z"
+              "WhenOpened": "2025-10-30T16:15:34.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "edit_patient.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_patient.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_patient.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_patient.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_patient.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-28T16:49:45.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditPatient_Form.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditPatient_Form.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EditPatient_Form.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditPatient_Form.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\EditPatient_Form.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAhwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:59:08.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuppliesForm.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\SuppliesForm.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\SuppliesForm.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\SuppliesForm.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\SuppliesForm.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAwHYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "find_supplies.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_supplies.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_supplies.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_supplies.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\find_supplies.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-30T16:15:33.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "edit_supplies.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_supplies.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_supplies.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_supplies.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_supplies.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-29T11:26:10.698Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\Login\\Login.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Login.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\Login\\Login.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEAAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T10:42:49.217Z"
+              "Title": "find_patient.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_patient.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_patient.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_patient.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\find_patient.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-12-01T04:38:43.174Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Change_Password.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Change_Password.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\Login\\Change_Password.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Change_Password.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\Login\\Change_Password.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAowDoAAAAhAAAAAAAAAA==",
+              "Title": "Edit_Supplies.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Edit_Supplies.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.568Z"
+              "WhenOpened": "2025-10-30T16:15:34.574Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Find_Employee.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwEYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Edit_Employee.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Edit_Employee.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\EmployeeManagement\\Edit_Employee.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Edit_Employee.cs",
               "RelativeToolTip": "ClinicApp_Test\\Test\\EmployeeManagement\\Edit_Employee.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAgwFsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAMwFQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T16:15:34.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Find_Employee.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\EmployeeManagement\\Find_Employee.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAIwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.58Z"
             },
             {
               "$type": "Document",
@@ -341,7 +341,7 @@
               "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\EmployeeManagement\\Delete_Employee.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Delete_Employee.cs",
               "RelativeToolTip": "ClinicApp_Test\\Test\\EmployeeManagement\\Delete_Employee.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwC0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAMwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T16:15:34.567Z"
             },
@@ -353,121 +353,301 @@
               "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\EmployeeManagement\\Add_Employee.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\EmployeeManagement\\Add_Employee.cs",
               "RelativeToolTip": "ClinicApp_Test\\Test\\EmployeeManagement\\Add_Employee.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAMwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T16:42:21.302Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "login.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\login.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\login.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\login.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\login.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Title": "add_patient.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_patient.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_patient.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_patient.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\add_patient.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-30T16:15:33.654Z"
+              "WhenOpened": "2025-11-30T11:11:57.986Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ExtentLogger.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentLogger.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\ExtentLogger.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentLogger.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Extent\\ExtentLogger.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDIAAAAJAAAAAAAAAA==",
+              "Title": "Add_Paitient.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Add_Paitient.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAD4vzcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T07:43:30.197Z"
+              "WhenOpened": "2025-10-30T16:15:34.578Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "ExtentManager.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentManager.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\ExtentManager.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentManager.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Extent\\ExtentManager.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\Login\\Login.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Login.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\Login\\Login.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAD4vy8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T08:37:41.903Z"
+              "WhenOpened": "2025-11-16T10:42:49.217Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "BaseTest_Report.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest_Report.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\BaseTest_Report.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest_Report.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Extent\\BaseTest_Report.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T08:40:36.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BaseTest.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\BaseTest.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Extent\\BaseTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T08:40:28.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Usings.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Usings.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Usings.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Usings.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Usings.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAvwBYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EmployeeForm.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EmployeeForm.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EmployeeForm.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EmployeeForm.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\EmployeeForm.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAgwE8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SuppliesForm.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\SuppliesForm.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\SuppliesForm.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\SuppliesForm.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\SuppliesForm.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAcwFQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "PaitientForm.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\PaitientForm.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\PaitientForm.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\PaitientForm.cs",
               "RelativeToolTip": "ClinicApp_Test\\Forms\\PaitientForm.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAcwFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwHcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T16:15:34.545Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmployeeForm.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EmployeeForm.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EmployeeForm.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EmployeeForm.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\EmployeeForm.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAgwG4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "find_employee.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_employee.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_employee.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_employee.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\find_employee.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-30T16:15:34.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "add_employee.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_employee.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_employee.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_employee.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\add_employee.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-12-01T04:17:22.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "edit_employee.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_employee.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_employee.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_employee.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_employee.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-11-30T09:04:18.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddEmployee_Form.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:59:00.102Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "ExtentManager.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentManager.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\ExtentManager.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentManager.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Extent\\ExtentManager.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T08:37:41.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ExtentLogger.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentLogger.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\ExtentLogger.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\ExtentLogger.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Extent\\ExtentLogger.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T07:43:30.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BaseTest_Report.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest_Report.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\BaseTest_Report.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest_Report.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Extent\\BaseTest_Report.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:40:36.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BaseTest.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Extent\\BaseTest.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Extent\\BaseTest.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Extent\\BaseTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T08:40:28.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GlobalSetup.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Base\\GlobalSetup.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Base\\GlobalSetup.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Base\\GlobalSetup.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Base\\GlobalSetup.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T03:44:38.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "add_supplies.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_supplies.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_supplies.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_supplies.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\add_supplies.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-30T16:15:34.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "change_password.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\change_password.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\change_password.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\change_password.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\change_password.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-30T16:15:34.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "login.csv",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\login.csv",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\login.csv",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\login.csv",
+              "RelativeToolTip": "ClinicApp_Test\\Data\\login.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-10-30T16:15:33.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Change_Password.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Change_Password.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\Login\\Change_Password.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\Login\\Change_Password.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\Login\\Change_Password.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Delete_Supplies.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Delete_Supplies.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete_Paitient.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\PaitientManagament\\Delete_Paitient.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\LoginForm.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EditEmployee_Form.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwD8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T10:59:14.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Add_Supplies.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Test\\SuppliesManagement\\Add_Supplies.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAgwHQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:15:34.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClinicApp_Test.csproj",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\ClinicApp_Test.csproj",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\ClinicApp_Test.csproj",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\ClinicApp_Test.csproj",
+              "RelativeToolTip": "ClinicApp_Test\\ClinicApp_Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-29T16:37:27.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\MainForm.cs",
@@ -479,55 +659,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\LoginForm.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwCMAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 39,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Usings.cs",
+              "RelativeDocumentMoniker": "ClinicApp_Test\\Usings.cs",
+              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Usings.cs",
+              "RelativeToolTip": "ClinicApp_Test\\Usings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T16:15:34.54Z"
+              "WhenOpened": "2025-10-30T16:15:34.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 40,
               "Title": "EditSupplies_Form.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditSupplies_Form.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EditSupplies_Form.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditSupplies_Form.cs",
               "RelativeToolTip": "ClinicApp_Test\\Forms\\EditSupplies_Form.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwDIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-30T09:20:49.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EditPatient_Form.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditPatient_Form.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EditPatient_Form.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditPatient_Form.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\EditPatient_Form.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAUwCkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T10:59:08.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EditEmployee_Form.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\EditEmployee_Form.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA0wHMAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T10:59:14.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "ChangePasswordForm.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\ChangePasswordForm.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\ChangePasswordForm.cs",
@@ -539,183 +695,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 42,
               "Title": "AddSupplies_Form.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddSupplies_Form.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\AddSupplies_Form.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddSupplies_Form.cs",
               "RelativeToolTip": "ClinicApp_Test\\Forms\\AddSupplies_Form.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T10:59:04.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 43,
               "Title": "AddPatient_Form.cs",
               "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddPatient_Form.cs",
               "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\AddPatient_Form.cs",
               "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddPatient_Form.cs",
               "RelativeToolTip": "ClinicApp_Test\\Forms\\AddPatient_Form.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAywBEAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvxEAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T10:58:55.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AddEmployee_Form.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Forms\\AddEmployee_Form.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA7wDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T10:59:00.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GlobalSetup.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Base\\GlobalSetup.cs",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Base\\GlobalSetup.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Base\\GlobalSetup.cs",
-              "RelativeToolTip": "ClinicApp_Test\\Base\\GlobalSetup.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T03:44:38.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "find_employee.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_employee.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_employee.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_employee.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\find_employee.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-30T16:15:34.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "add_patient.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_patient.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_patient.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_patient.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\add_patient.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-11-30T11:11:57.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "add_employee.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_employee.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_employee.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_employee.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\add_employee.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-12-01T04:17:22.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "change_password.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\change_password.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\change_password.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\change_password.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\change_password.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-30T16:15:34.548Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "edit_employee.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_employee.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_employee.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_employee.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_employee.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-11-30T09:04:18.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "edit_supplies.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_supplies.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_supplies.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_supplies.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_supplies.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-11-29T11:26:10.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "find_patient.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_patient.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_patient.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_patient.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\find_patient.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-12-01T04:38:43.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "find_supplies.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_supplies.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\find_supplies.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\find_supplies.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\find_supplies.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-30T16:15:33.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "add_supplies.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_supplies.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\add_supplies.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\add_supplies.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\add_supplies.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-10-30T16:15:34.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "edit_patient.csv",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_patient.csv",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\Data\\edit_patient.csv",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\Data\\edit_patient.csv",
-              "RelativeToolTip": "ClinicApp_Test\\Data\\edit_patient.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2025-11-28T16:49:45.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ClinicApp_Test.csproj",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\ClinicApp_Test.csproj",
-              "RelativeDocumentMoniker": "ClinicApp_Test\\ClinicApp_Test.csproj",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\AutomationTest_Project\\ClinicApp_Test\\ClinicApp_Test\\ClinicApp_Test.csproj",
-              "RelativeToolTip": "ClinicApp_Test\\ClinicApp_Test.csproj",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-29T16:37:27.19Z"
             }
           ]
         }

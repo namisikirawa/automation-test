@@ -64,40 +64,36 @@ namespace ClinicApp_Test.Test.EmployeeManagement
             _test.AssignCategory("Sửa nhân viên");
             try
             {
-                ExtentLogger.info(_test, $"Tìm nhân viên cần sửa: {tenCanTim}");
+                ExtentLogger.Info(_test, $"Tìm nhân viên cần sửa: {tenCanTim}");
                 employeeForm.FindEmployee(tenCanTim, "");
-                ExtentLogger.info(_test,"Click chuột phải, chọn 'Sửa'");
+
+                ExtentLogger.Info(_test,"Click chuột phải, chọn 'Sửa'");
                 employeeForm.EditFirstEmployee(GlobalSetup.automation, GlobalSetup.app.ProcessId);
 
-                ExtentLogger.info(_test, "Mở form sửa nhân viên");
+                ExtentLogger.Info(_test, "Mở form sửa nhân viên");
                 var editForm = new EditEmployee_Form(GlobalSetup.mainWindow);
 
-                ExtentLogger.info(_test, $"Nhập thông tin mới: " +
-                    $"Họ tên: {hoTen}, " +
-                    $"Giới tính: {gioiTinh}, " +
-                    $"Ngày sinh: {ngaySinh}, " +
-                    $"SĐT: {sdt}, " +
-                    $"Địa chỉ: {diaChi}, " +
-                    $"Email: {email}, " +
-                    $"Chức vụ: {chucVu}, " +
-                    $"Giờ làm việc: {gioLamViec}, " +
-                    $"Bằng cấp: {bangCap}, " +
-                    $"Kinh nghiệm: {knLamViec}"
-                );
+                ExtentLogger.Info(_test, $"Nhập thông tin mới:" +
+                    $"");
                 editForm.EnterEmployeeInfo(hoTen, gioiTinh, ngaySinh, sdt, diaChi, email, chucVu, gioLamViec, bangCap, knLamViec);
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test,"Nhấn nút 'Lưu'");
                 var actualMessage = editForm.ClickSaveAndGetMessage(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMessage}'");
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMessage}'");
 
-                Assert.AreEqual(expectedMessage, actualMessage, "Messagebox không đúng như mong đợi");
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                if(expectedMessage != actualMessage)
+                {
+                    ExtentLogger.FailWithoutScreenshot(_test, "Test case fail: Thông báo không đúng như mong đợi");
+                    Assert.Fail("Thông báo không đúng như mong đợi");
+                }
+
+                ExtentLogger.PassWithoutScreenshot(_test, "Thông báo đúng như mong đợi");
             }
             catch (Exception ex)
             {
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo không khớp");
-                Assert.Fail($"Lỗi trong quá trình sửa nhân viên: {ex.Message}");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
+                Assert.Fail($"Sửa nhân viên thất bại: {ex.Message}");
             }
         }
     }

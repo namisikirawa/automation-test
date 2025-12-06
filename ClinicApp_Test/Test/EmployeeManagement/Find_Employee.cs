@@ -1,6 +1,7 @@
 ﻿
 
 using ClinicApp_Test.Extent;
+using ClinicApp_Test.Form;
 using System.Diagnostics;
 
 namespace ClinicApp_Test.Test.EmployeeManagement
@@ -45,38 +46,32 @@ namespace ClinicApp_Test.Test.EmployeeManagement
 
         [DataTestMethod]
         [DynamicData(nameof(GetData), DynamicDataSourceType.Method)]
-        public void TestFindEmployee(string testCaseName, string name, string phoneNumber, string[] expectedCellData)
+         public void TestFindEmployee(string testCaseName, string name, string phoneNumber, string[] expectedCellData)
         {
             var _test = _extent.CreateTest(testCaseName);
             _test.AssignCategory("Tìm kiếm nhân viên");
             try
             {
-                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}'. Số điện thoại: {phoneNumber}");
-                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                ExtentLogger.Info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}'. Số điện thoại: {phoneNumber}");
+                ExtentLogger.Info(_test, $"Nhấn nút Tìm kiếm");
                 employeeForm.FindEmployee(name, phoneNumber);
                 Thread.Sleep(1000);
 
-                var allRows = employeeForm.GetAllGridValues();
-                bool allMatch = allRows.All(row =>
-                    row.Any(cell =>
-                        expectedCellData.Any(expected =>
-                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.info(_test, "Dữ liệu thực tế:");
-                for (int i = 0; i < allRows.Count; i++)
-                {
-                    var row = allRows[i];
-                    string rowData = string.Join(" | ", row);
-                    ExtentLogger.info(_test, $"Dòng {i + 1}: {rowData}");
-                }
+                ExtentLogger.Info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Info(_test, "Dữ liệu thực tế:");
+                var check = employeeForm.VerifySearchResults(expectedCellData);
 
-                Assert.IsTrue(allMatch, $"Có ít nhất một dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm nhân viên thành công!");
+                var allRows = employeeForm.GetAllGridValues();
+                foreach (var row in allRows)
+                    ExtentLogger.Info(_test, string.Join(" | ", row));
+
+                Assert.IsTrue(check, $"Có ít nhất một dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Pass(_test, "Test case pass");
             }
             catch (Exception ex)
             {
                 Assert.Fail($"Lỗi trong quá trình tìm kiếm nhân viên: {ex.Message}");
-                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm nhân viên thất bại!");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
     }

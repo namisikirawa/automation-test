@@ -137,6 +137,7 @@ D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\obj\Debug\net7.0\ClinicApp_Test.csproj.AssemblyReference.cache
+D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\obj\Debug\net7.0\ClinicApp_Test.csproj.ResolveComReference.cache
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\obj\Debug\net7.0\ClinicApp_Test.GeneratedMSBuildEditorConfig.editorconfig
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\obj\Debug\net7.0\ClinicApp_Test.AssemblyInfoInputs.cache
 D:\Đồ án tốt nghiệp\AutomationTest_Project\ClinicApp_Test\ClinicApp_Test\obj\Debug\net7.0\ClinicApp_Test.AssemblyInfo.cs

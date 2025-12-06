@@ -1,11 +1,6 @@
 ﻿using ClinicApp_Test.Extent;
+using ClinicApp_Test.Form;
 using ClinicApp_Test.Forms;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ClinicApp_Test.Test.PaitientManagament
 {
@@ -68,12 +63,14 @@ namespace ClinicApp_Test.Test.PaitientManagament
             _test.AssignCategory("Thêm bệnh nhân");
             try
             {
-                ExtentLogger.info(_test, "Nhấn nút Thêm bệnh nhân");
+                int beforeCount = patientForm.GetRowCount();
+
+                ExtentLogger.Info(_test, "Nhấn nút 'Thêm mới'");
                 patientForm.ClickAddButton();
                 Thread.Sleep(500);
 
                 var addForm = new AddPatient_Form(GlobalSetup.mainWindow);
-                ExtentLogger.info(_test, "Nhập thông tin bệnh nhân: " +
+                ExtentLogger.Info(_test, "Nhập thông tin bệnh nhân: " +
                     $"Họ tên: {hoTen}, " +
                     $"Giới tính: {gioiTinh}, " +
                     $"Ngày sinh: {ngaySinh}, " +
@@ -94,30 +91,43 @@ namespace ClinicApp_Test.Test.PaitientManagament
                     chieuCao, canNang, diUng, nhomMau, tsBenhAn, ghiChu
                 );
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test, "Nhấn nút Lưu");
                 addForm.ClickSave(GlobalSetup.automation, GlobalSetup.app.ProcessId);
                 Thread.Sleep(300);
 
                 string actualMessage = addForm.GetMessageBoxText(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMessage}'");
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMessage}'");
+                if (expectedMessage != actualMessage)
+                {
+                    ExtentLogger.Fail(_test, "Test case fail: Thông báo không khớp!");
+                    addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+                    Assert.Fail("Message box text mismatch!");
+                }
 
-                Assert.AreEqual(expectedMessage, actualMessage);
-
-                // Capture screenshot khi pass
-                string screenshotPath = ExtentLogger.CaptureScreenshot(GlobalSetup.mainWindow, testCaseName + "_Pass");
-                ExtentLogger.AttachScreenshot(_test, screenshotPath, "Screenshot khi test pass");
-
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                //pass phần kiểm tra hộp thoại: screenshot+ thông báo
+                ExtentLogger.Pass(_test, "Thông báo trùng khớp");
                 addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+
+                if (expectedMessage == "Thêm bệnh nhân thành công!")
+                {
+                    //kiểm tra số bệnh nhân có tăng thêm 1 không
+                    int afterCount = patientForm.GetRowCount();
+                    ExtentLogger.Info(_test, $"Số bệnh nhân trước khi thêm: {beforeCount}");
+                    ExtentLogger.Info(_test, $"Số bệnh nhân sau khi thêm: {afterCount}");
+
+                    if (afterCount != beforeCount + 1)
+                    {
+                        ExtentLogger.Error(_test, "Số lượng bệnh nhân không tăng thêm 1 sau khi thêm!");
+                        Assert.Fail("Row count mismatch!");
+                    }
+                }
+
+                ExtentLogger.PassWithoutScreenshot(_test, "Test case passed!");
             }
             catch (Exception ex)
             {
-                // Capture screenshot khi fail
-                string screenshotPath = ExtentLogger.CaptureScreenshot(GlobalSetup.mainWindow, testCaseName + "_Fail");
-                ExtentLogger.AttachScreenshot(_test, screenshotPath, "Screenshot khi test fail");
-
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo ko khớp");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
                 Assert.Fail($"Lỗi: {ex.Message}");
             }
             finally
@@ -126,12 +136,12 @@ namespace ClinicApp_Test.Test.PaitientManagament
                 {
                     var addForm = new AddPatient_Form(GlobalSetup.mainWindow);
                     addForm.ClickCancel();
-                    ExtentLogger.info(_test, "Đã đóng form thêm bệnh nhân");
+                    ExtentLogger.Info(_test, "Đã đóng form thêm bệnh nhân");
                 }
                 catch(Exception ex)
                 {
                     Assert.Fail($"Lỗi khi đóng form thêm bệnh nhân: {ex.Message}");
-                    Assert.Fail($"Lỗi: {ex.Message}");
+                    ExtentLogger.Error(_test,$"Lỗi: {ex.Message}");
                 }
             }
         }

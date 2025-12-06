@@ -1,5 +1,6 @@
 testCaseName,name,phoneNumber,expectedCellData
-TC_021: Tìm nhân viên theo họ tên,khuê,,Bùi Minh Khuê
-TC_022: Tìm nhân viên theo số điện thoại,,0707389258,Đỗ Tiến Đạt
-TC_023: Tìm nhân viên theo cả họ tên và số điện thoại,Vương,3378,Trần Trọng Vương|Hạnh Nguyên
+TC_032: Tìm nhân viên theo họ tên,tuấn,,Trịnh Văn Tuấn
+TC_033: Tìm nhân viên theo số điện thoại,,0707389258,Đỗ Tiến Đạt
+TC_034: Tìm nhân viên theo cả họ tên và số điện thoại,Vương,3378,Trần Trọng Vương|Hạnh Nguyên
+TC_035: Tìm nhân viên không tồn tại,mai,,Danh sách trống
 

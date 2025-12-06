@@ -98,7 +98,31 @@ namespace ClinicApp_Test.Form
 
             return filteredRows;
         }
+        public bool VerifySearchResults(string[] expectedCellData)
+        {
+            var rows = GetAllGridValues();
 
+            if (rows.Count == 0)
+            {
+                if(expectedCellData[0] == "Danh sách trống")
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            foreach (var row in rows)
+            {
+                bool contains = row.Any(cell =>
+                    expectedCellData.Any(expected =>
+                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase)));
+
+                if (!contains)
+                    return false;
+            }
+
+            return true;
+        }
         public void ClickAddButton()
         {
             var toolBar = _window.FindFirstDescendant(cf => cf.ByControlType(ControlType.ToolBar));
@@ -132,7 +156,6 @@ namespace ClinicApp_Test.Form
             editItem.Click();
             Thread.Sleep(500);
         }
-
         public int GetRowCount()
         {
             var grid = EmployeeGrid;

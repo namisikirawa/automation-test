@@ -1,4 +1,5 @@
 testCaseName,name,phoneNumber,expectedCellData
-TC_024: Tìm bệnh nhân theo họ tên,đức,,Thân Trọng Đức
-TC_025: Tìm bệnh nhân theo số điện thoại,,0935423378,Nguyễn Thị Kim Loan
-TC_026: Tìm bệnh nhân theo cả họ tên và số điện thoại,mạnh,9554,Phạm Văn Mạnh|Nguyễn Gia Hạnh
+TC_020: Tìm bệnh nhân theo họ tên,nam,,Nguyễn Thành Nam
+TC_021: Tìm bệnh nhân theo số điện thoại,,0935423378,Nguyễn Thị Kim Loan
+TC_022: Tìm bệnh nhân theo cả họ tên và số điện thoại,mạnh,9554,Phạm Văn Mạnh|Nguyễn Gia Hạnh
+TC_023: Tìm bệnh nhân không tồn tại,mai,,Danh sách trống

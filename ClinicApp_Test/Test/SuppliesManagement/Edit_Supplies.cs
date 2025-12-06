@@ -62,15 +62,15 @@ namespace ClinicApp_Test.Test.SuppliesManagement
             _test.AssignCategory("Sửa vật tư");
             try
             {
-                ExtentLogger.info(_test, $"Tìm vật tư cần sửa: {tenCanTim}");
+                ExtentLogger.Info(_test, $"Tìm vật tư cần sửa: {tenCanTim}");
                 suppliesForm.FindSupplies(tenCanTim, "");
                 suppliesForm.EditFirstSupplies(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, "Click chuột phải, chọn 'Sửa'");
+                ExtentLogger.Info(_test, "Click chuột phải, chọn 'Sửa'");
 
-                ExtentLogger.info(_test, "Mở form sửa vật tư");
+                ExtentLogger.Info(_test, "Mở form sửa vật tư");
                 var editForm = new EditSupplies_Form(GlobalSetup.mainWindow);
 
-                ExtentLogger.info(_test, "Nhập thông tin mới: " +
+                ExtentLogger.Info(_test, "Nhập thông tin mới: " +
                     $"Tên vật tư: {tenvattu}, " +
                     $"Số lượng: {sl}, " +
                     $"Đơn vị tính: {dvt}, " +
@@ -82,13 +82,18 @@ namespace ClinicApp_Test.Test.SuppliesManagement
 
                 editForm.EnterSuppliesInfo(tenvattu, sl, dvt, dongia, ngaynhap, ngayhethan, nhacungcap);
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test, "Nhấn nút Lưu");
                 var actualMsg = editForm.ClickSaveAndGetMessage(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMsg}'");
+                ExtentLogger.Info(_test, $"Mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMsg}'");
 
-                Assert.AreEqual(expectedMessage, actualMsg, "Messagebox không đúng như mong đợi");
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                if (expectedMessage != actualMsg)
+                {
+                    ExtentLogger.FailWithoutScreenshot(_test, "Test case fail: Thông báo không đúng như mong đợi");
+                    Assert.Fail("Thông báo không đúng như mong đợi");
+                }
+
+                ExtentLogger.PassWithoutScreenshot(_test, "Thông báo đúng như mong đợi");
             }
             catch (AssertFailedException)
             {
@@ -97,7 +102,7 @@ namespace ClinicApp_Test.Test.SuppliesManagement
             catch (Exception ex)
             {
                 Assert.Fail("Lỗi trong quá trình test sửa vật tư: " + ex.Message);
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo không khớp");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
     }

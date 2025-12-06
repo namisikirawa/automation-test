@@ -1,5 +1,6 @@
 ﻿using AventStack.ExtentReports.Gherkin.Model;
 using ClinicApp_Test.Extent;
+using ClinicApp_Test.Form;
 using ClinicApp_Test.Forms;
 using System;
 using System.Collections.Generic;
@@ -63,12 +64,14 @@ namespace ClinicApp_Test.Test.SuppliesManagement
             _test.AssignCategory("Thêm vật tư");
             try
             {
-                ExtentLogger.info(_test, "Nhấn nút Thêm vật tư");
+                int beforeCount = suppliesForm.GetRowCount();
+
+                ExtentLogger.Info(_test, "Nhấn nút 'Thêm mới'");
                 suppliesForm.ClickAddButton();
                 Thread.Sleep(500);
 
                 var addForm = new AddSupplies_Form(GlobalSetup.mainWindow);
-                ExtentLogger.info(_test, "Nhập thông tin vật tư: " +
+                ExtentLogger.Info(_test, "Nhập thông tin vật tư: " +
                     $"Tên vật tư: {tenvattu}, " +
                     $"Số lượng: {sl}, " +
                     $"Đơn vị tính: {dvt}, " +
@@ -80,21 +83,43 @@ namespace ClinicApp_Test.Test.SuppliesManagement
 
                 addForm.EnterSuppliesInfo(tenvattu, sl, dvt, dongia, ngaynhap, ngayhethan, nhacungcap);
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test, "Nhấn nút Lưu");
                 addForm.ClickSave(GlobalSetup.automation, GlobalSetup.app.ProcessId);
                 Thread.Sleep(300);
 
                 string actualMessage = addForm.GetMessageBoxText(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMessage}'");
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMessage}'");
 
-                Assert.AreEqual(expectedMessage, actualMessage);
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                if(expectedMessage != actualMessage)
+                {
+                    ExtentLogger.Fail(_test, "Test case fail: Thông báo không khớp!");
+                    addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+                    Assert.Fail("Message box text mismatch!");
+                }
+
+                //pass phần kiểm tra hộp thoại: screenshot+ thông báo
+                ExtentLogger.Pass(_test, "Thông báo trùng khớp");
                 addForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+
+                if (expectedMessage == "Thêm bệnh nhân thành công!")
+                {
+                    //kiểm tra số vật tư có tăng thêm 1 không
+                    int afterCount = suppliesForm.GetRowCount();
+                    ExtentLogger.Info(_test, $"Số vật tư trước khi thêm: {beforeCount}");
+                    ExtentLogger.Info(_test, $"Số vật tư sau khi thêm: {afterCount}");
+
+                    if (afterCount != beforeCount + 1)
+                    {
+                        ExtentLogger.Error(_test, "Số lượng vật tư không tăng thêm 1 sau khi thêm!");
+                        Assert.Fail("Row count mismatch!");
+                    }
+                }
+                ExtentLogger.PassWithoutScreenshot(_test, "Test case passed!");
             }
             catch (Exception ex)
             {
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo không khớp");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
                 Assert.Fail($"Lỗi: {ex.Message}");
             }
             finally
@@ -103,12 +128,12 @@ namespace ClinicApp_Test.Test.SuppliesManagement
                 {
                     var addForm = new AddSupplies_Form(GlobalSetup.mainWindow);
                     addForm.ClickCancel();
-                    ExtentLogger.info(_test, "Đã đóng form thêm vật tư");
+                    ExtentLogger.Info(_test, "Đã đóng form thêm vật tư");
                 }
                 catch (Exception ex)
                 {
                     Assert.Fail($"Lỗi khi đóng form thêm vật tư: {ex.Message}");
-                    Assert.Fail($"Lỗi: {ex.Message}");
+                    ExtentLogger.Error(_test,$"Lỗi: {ex.Message}");
                 }
             }
         }

@@ -1,5 +1,5 @@
 ﻿testCaseName,username,password,expectedMessage
-TC_001: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng,trongquynh,16082003,Tài khoản hoặc mật khẩu không chính xác!
-TC_002: Đăng nhập thất bại với tài khoản để trống,,password,Tài khoản không được để trống
-TC_003: Đăng nhập thất bại với mật khẩu để trống,user,,Mật khẩu không được để trống
-TC_004: Đăng nhập thành công,admin,123456,Chúc mừng bạn đã đăng nhập thành công!
+TC_001: Đăng nhập thành công,admin,123456,Chúc mừng bạn đã đăng nhập thành công!
+TC_002: Đăng nhập thất bại với tài khoản hoặc mật khẩu không đúng,trongquynh,16082003,Tài khoản hoặc mật khẩu không chính xác!
+TC_003: Đăng nhập thất bại với tài khoản để trống,,password,Tài khoản không được để trống
+TC_004: Đăng nhập thất bại với mật khẩu để trống,user,,Mật khẩu không được để trống

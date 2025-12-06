@@ -69,15 +69,15 @@ namespace ClinicApp_Test.Test.PaitientManagament
             _test.AssignCategory("Sửa bệnh nhân");
             try
             {
-                ExtentLogger.info(_test, $"Tìm bệnh nhân cần sửa: {tenCanTim}");
+                ExtentLogger.Info(_test, $"Tìm bệnh nhân cần sửa: {tenCanTim}");
                 patientForm.FindPatient(tenCanTim, "");
                 patientForm.EditFirstPatient(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, "Click chuột phải, chọn 'Sửa'");
+                ExtentLogger.Info(_test, "Click chuột phải, chọn 'Sửa'");
 
-                ExtentLogger.info(_test, "Mở form sửa bệnh nhân");
+                ExtentLogger.Info(_test, "Mở form sửa bệnh nhân");
                 var editForm = new EditPatient_Form(GlobalSetup.mainWindow);
 
-                ExtentLogger.info(_test, "Nhập thông tin mới: " +
+                ExtentLogger.Info(_test, "Nhập thông tin mới: " +
                     $"Họ tên: {hoTen}, " +
                     $"Giới tính: {gioiTinh}, " +
                     $"Ngày sinh: {ngaySinh}, " +
@@ -98,18 +98,23 @@ namespace ClinicApp_Test.Test.PaitientManagament
                     chieuCao, canNang, diUng, nhomMau, tsBenhAn, ghiChu
                 );
 
-                ExtentLogger.info(_test, "Nhấn nút Lưu");
+                ExtentLogger.Info(_test, "Nhấn nút Lưu");
                 var actualMsg = editForm.ClickSaveAndGetMessage(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                ExtentLogger.info(_test, $"Mong đợi: '{expectedMessage}'");
-                ExtentLogger.info(_test, $"Thực tế: '{actualMsg}'");
+                ExtentLogger.Info(_test, $"Mong đợi: '{expectedMessage}'");
+                ExtentLogger.Info(_test, $"Thực tế: '{actualMsg}'");
 
-                Assert.AreEqual(expectedMessage, actualMsg, "Messagebox không đúng như mong đợi");
-                ExtentLogger.passHighlight(_test, "Test case pass: Thông báo chính xác");
+                if (expectedMessage != actualMsg)
+                {
+                    ExtentLogger.FailWithoutScreenshot(_test, "Test case fail: Thông báo không đúng như mong đợi");
+                    Assert.Fail("Thông báo không đúng như mong đợi");
+                }
+
+                ExtentLogger.PassWithoutScreenshot(_test, "Thông báo đúng như mong đợi");
             }
             catch (Exception ex)
             {
                 Assert.Fail("Lỗi trong quá trình test sửa bệnh nhân: " + ex.Message);
-                ExtentLogger.failHighlight(_test, $"Test case fail: Thông báo không khớp");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
     }

@@ -104,6 +104,32 @@ namespace ClinicApp_Test.Form
 
             return filteredRows;
         }
+
+        public bool VerifySearchResults(string[] expectedCellData)
+        {
+            var rows = GetAllGridValues();
+
+            if (rows.Count == 0)
+            {
+                if (expectedCellData[0] == "Danh sách trống")
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            foreach (var row in rows)
+            {
+                bool contains = row.Any(cell =>
+                    expectedCellData.Any(expected =>
+                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase)));
+
+                if (!contains)
+                    return false;
+            }
+
+            return true;
+        }
         //nhấn nút thêm vật tư
         public void ClickAddButton()
         {
@@ -138,6 +164,15 @@ namespace ClinicApp_Test.Form
 
             editItem.Click();
             Thread.Sleep(500);
+        }
+        public int GetRowCount()
+        {
+            var grid = SuppliesGrid;
+            if (grid == null)
+                throw new Exception("Không tìm thấy bảng bệnh nhân!");
+
+            // grid.Rows.Count includes hidden/new rows → cần lọc
+            return grid.Rows.Count(r => r.Cells.Any(c => !string.IsNullOrWhiteSpace(c.Value?.ToString())));
         }
     }
 }

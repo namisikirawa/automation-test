@@ -24,27 +24,27 @@ namespace ClinicApp_Test.Test.PaitientManagament
         [TestMethod]
         public void TestDeletePatient()
         {
-            var _test = _extent.CreateTest("TC_002: Xóa bệnh nhân thành công");
+            var _test = _extent.CreateTest("TC_016: Xóa bệnh nhân thành công");
             _test.AssignCategory("Xóa bệnh nhân");
             try
             {
                 var grid = patientForm.PatientGrid;
                 int initialRowCount = grid.Rows.Length;
-                ExtentLogger.info(_test, $"Số dòng trước khi xóa: {initialRowCount}");
+                ExtentLogger.Info(_test, $"Số nhân viên trước khi xóa: {initialRowCount}");
 
-                ExtentLogger.info(_test, "Xóa nhân viên đầu tiên trong danh sách");
+                ExtentLogger.Info(_test, "Xóa nhân viên đầu tiên trong danh sách");
                 patientForm.DeleteFirstPatient(GlobalSetup.automation, GlobalSetup.app.ProcessId);
 
                 grid = patientForm.PatientGrid;
                 int rowCountAfterDelete = grid.Rows.Length;
-                ExtentLogger.info(_test, $"Số dòng sau khi xóa: {rowCountAfterDelete}");
+                ExtentLogger.Info(_test, $"Số dòng sau khi xóa: {rowCountAfterDelete}");
 
                 Assert.AreEqual(initialRowCount - 1, rowCountAfterDelete,"Số dòng không giảm sau khi xóa!");
-                ExtentLogger.passHighlight(_test, "Test case pass: Xóa bệnh nhân thành công");
+                ExtentLogger.Pass(_test, "Test case pass: Xóa bệnh nhân thành công");
             }
             catch (Exception ex)
             {
-                ExtentLogger.failHighlight(_test, $"Test case fail: Xóa bệnh nhân thất bại");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
                 Assert.Fail($"Lỗi trong quá trình xóa bệnh nhân: {ex.Message}");
             }
         }

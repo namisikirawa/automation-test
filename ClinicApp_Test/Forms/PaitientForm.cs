@@ -98,7 +98,6 @@ namespace ClinicApp_Test.Form
                 .ToList())
             .ToList();
 
-            // Lọc bỏ các dòng mà tất cả các ô đều rỗng hoặc null (dòng cuối cùng trong gridview)
             var filteredRows = allRows
                 .Where(row => row.Any(cell =>
                     !string.IsNullOrWhiteSpace(cell) &&
@@ -107,7 +106,31 @@ namespace ClinicApp_Test.Form
 
             return filteredRows;
         }
+        public bool VerifySearchResults(string[] expectedCellData)
+        {
+            var rows = GetAllGridValues();
 
+            if (rows.Count == 0)
+            {
+                if (expectedCellData[0] == "Danh sách trống")
+                {
+                    return true;
+                }
+                return false;
+            }
+
+            foreach (var row in rows)
+            {
+                bool contains = row.Any(cell =>
+                    expectedCellData.Any(expected =>
+                        cell.Contains(expected, StringComparison.OrdinalIgnoreCase)));
+
+                if (!contains)
+                    return false;
+            }
+
+            return true;
+        }
         public void ClickAddButton()
         {
             var toolBar = _window.FindFirstDescendant(cf => cf.ByControlType(ControlType.ToolBar));
@@ -142,6 +165,15 @@ namespace ClinicApp_Test.Form
 
             editItem.Click();
             Thread.Sleep(500);
+        }
+        public int GetRowCount()
+        {
+            var grid = PatientGrid;
+            if (grid == null)
+                throw new Exception("Không tìm thấy bảng bệnh nhân!");
+
+            // grid.Rows.Count includes hidden/new rows → cần lọc
+            return grid.Rows.Count(r => r.Cells.Any(c => !string.IsNullOrWhiteSpace(c.Value?.ToString())));
         }
     }
 }

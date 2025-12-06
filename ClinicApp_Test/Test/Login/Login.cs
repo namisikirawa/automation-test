@@ -1,6 +1,7 @@
 ﻿
 using ClinicApp_Test.Extent;
 using ClinicApp_Test.Form;
+using FlaUI.Core.AutomationElements;
 
 namespace ClinicApp_Test.Test.Login
 {
@@ -48,42 +49,48 @@ namespace ClinicApp_Test.Test.Login
         {
             var _test = _extent.CreateTest(testCaseName);
             _test.AssignCategory("Đăng nhập");
-
-            ExtentLogger.info(_test, $"Nhập Username: {username}, Password: {password}");
-            loginForm.UsernameTextBox.Text = string.Empty;
-            loginForm.PasswordTextBox.Text = string.Empty;
-            Thread.Sleep(300);
-
-            loginForm.EnterUsername(username);
-            loginForm.EnterPassword(password);
-            ExtentLogger.info(_test, "Nhấn nút Đăng nhập");
-            loginForm.ClickLogin();
-            Thread.Sleep(1000);
-
-            string actualMessage = loginForm.GetMessageBoxText(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-            ExtentLogger.info(_test, $"Thông báo mong đợi: {expectedMessage}");
-            ExtentLogger.info(_test, $"Thực tế: {actualMessage}");
             try
             {
-                Assert.AreEqual(expectedMessage, actualMessage);
-                ExtentLogger.passHighlight(_test, "Test case pass: Kết quả khớp với mong đợi");
+                ExtentLogger.Info(_test, $"Nhập tài khoản: {username}");
+                ExtentLogger.Info(_test, $"Nhập mật khẩu: {password}");
+                loginForm.UsernameTextBox.Text = string.Empty;
+                loginForm.PasswordTextBox.Text = string.Empty;
+                Thread.Sleep(300);
+                loginForm.EnterUsername(username);
+                loginForm.EnterPassword(password);
+
+                ExtentLogger.Info(_test, "Nhấn nút Đăng nhập");
+                loginForm.ClickLogin();
+                Thread.Sleep(1000);
+
+                string actualMessage = loginForm.GetMessageBoxText(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+                ExtentLogger.Info(_test, $"Thông báo mong đợi: {expectedMessage}");
+                ExtentLogger.Info(_test, $"Thực tế: {actualMessage}");
+
+                if(expectedMessage != actualMessage)
+                {
+                    ExtentLogger.Fail(_test, "Test case fail: Thông báo không khớp");
+                    Assert.Fail("Thông báo không khớp");
+                }
+                ExtentLogger.Pass(_test, "Thông báo trùng khớp");
+                loginForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
+
+                if (actualMessage == "Chúc mừng bạn đã đăng nhập thành công!")
+                {
+                    loginForm.LogoutIfLoggedIn(GlobalSetup.automation, GlobalSetup.app);
+                    // Sau khi đăng xuất, khởi tạo lại LoginForm
+                    var window = GlobalSetup.app.GetMainWindow(GlobalSetup.automation);
+                    loginForm = new LoginForm(window);
+                    ExtentLogger.Info(_test, "Đã đăng xuất");
+                    Thread.Sleep(1000);
+                }
+                ExtentLogger.PassWithoutScreenshot(_test, "Test case pass");
+                Thread.Sleep(500);
             }
             catch (AssertFailedException ex)
             {
-                ExtentLogger.failHighlight(_test, "Test case fail: Kết quả không khớp với mong đợi");
-                throw ex;
-            }
-            finally
-            {
-                loginForm.CloseMessageBox(GlobalSetup.automation, GlobalSetup.app.ProcessId);
-                Thread.Sleep(500);
-            }
-
-            if (expectedMessage == "Chúc mừng bạn đã đăng nhập thành công!")
-            {
-                ExtentLogger.info(_test, "Đăng xuất sau khi đăng nhập thành công để trả về trạng thái ban đầu");
-                loginForm.LogoutIfLoggedIn(GlobalSetup.automation, GlobalSetup.app);
-                Thread.Sleep(1000);
+                ExtentLogger.Fail(_test, "Test case fail: Kết quả không khớp với mong đợi");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
             }
         }
         [ClassCleanup(ClassCleanupBehavior.EndOfClass)]

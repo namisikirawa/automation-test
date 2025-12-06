@@ -19,5 +19,3 @@ global using AventStack.ExtentReports;
 global using AventStack.ExtentReports.Reporter;
 global using ClinicApp_Test.Base;
 global using System.Drawing;
-global using System.Drawing.Imaging;
-global using FlaUI.Core.Capturing;

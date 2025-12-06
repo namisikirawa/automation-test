@@ -1,4 +1,5 @@
 testCaseName,suppliesName,provider,expectedCellData
-TC_031: Tìm vật tư theo tên,keo,,Băng keo cá nhân
-TC_032: Tìm vật tư theo nhà cung cấp,Nhà thuốc Ngọc Châu,Khẩu trang y tế
-TC_033: Tìm vật tư theo cả tên vật tư và nhà cung cấp,cồn,Hiệp Nhơn Pharmacy,Cồn sát khuẩn 70 độ
+TC_043: Tìm vật tư theo tên,keo,,Băng keo cá nhân
+TC_044: Tìm vật tư theo nhà cung cấp,,Nhà thuốc Ngọc Châu,Khẩu trang y tế
+TC_045: Tìm vật tư theo cả tên vật tư và nhà cung cấp,cồn,Hiệp Nhơn Pharmacy,Cồn sát khuẩn 70 độ
+TC_046: Tìm vật tư không tồn tại,mai,,Danh sách trống

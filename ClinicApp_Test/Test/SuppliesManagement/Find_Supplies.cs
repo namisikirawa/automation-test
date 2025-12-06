@@ -53,32 +53,25 @@ namespace ClinicApp_Test.Test.SuppliesManagement
             _test.AssignCategory("Tìm kiếm vật tư");
             try
             {
-                ExtentLogger.info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', Nhà cung cấp = '{provider}'");
-                ExtentLogger.info(_test, $"Nhấn nút Tìm kiếm");
+                ExtentLogger.Info(_test, $"Nhập vào ô tìm kiếm: Tên = '{name}', Nhà cung cấp = '{provider}'");
+                ExtentLogger.Info(_test, $"Nhấn nút Tìm kiếm");
                 suppliesForm.FindSupplies(name, provider);
                 Thread.Sleep(1200);
 
+                ExtentLogger.Info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Info(_test, "Dữ liệu thực tế:");
+                var check = suppliesForm.VerifySearchResults(expectedCellData);
+
                 var allRows = suppliesForm.GetAllGridValues();
+                foreach (var row in allRows)
+                    ExtentLogger.Info(_test, string.Join(" | ", row));
 
-                bool allMatch = allRows.All(row =>
-                    row.Any(cell =>
-                        expectedCellData.Any(expected =>
-                            cell.Contains(expected, StringComparison.OrdinalIgnoreCase))));
-                ExtentLogger.info(_test, $"Dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.info(_test, "Dữ liệu thực tế:");
-                for (int i = 0; i < allRows.Count; i++)
-                {
-                    var row = allRows[i];
-                    string rowData = string.Join(" | ", row);
-                    ExtentLogger.pass(_test, $"Dòng {i + 1}: {rowData}");
-                }
-
-                Assert.IsTrue(allMatch, $"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
-                ExtentLogger.passHighlight(_test, "Test case pass: Tìm kiếm vật tư thành công!");
+                Assert.IsTrue(check, $"Có dòng không chứa dữ liệu mong đợi: {string.Join(", ", expectedCellData)}");
+                ExtentLogger.Pass(_test, "Test case pass");
             }
             catch (Exception ex)
             {
-                ExtentLogger.failHighlight(_test, "Test case fail: Tìm kiếm vật tư thất bại!");
+                ExtentLogger.Fail(_test, $"Test case fail: {ex.Message}");
                 Assert.Fail($"TestFindSupplies failed with exception: {ex.Message}");
             }
         }
